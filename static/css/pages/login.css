@@ -1,0 +1,55 @@
+.layout-banner{
+    background: transparent url(../../img/pages/login.jpg) no-repeat center 0px;
+}
+
+.mod-login{
+    height: 500px;
+    position: relative;
+}
+.mod-login .login-box{
+    position: absolute;
+    top:10px;
+    right: 8px;
+    width: 302px;
+    height: 387px;
+}
+.mod-login .login-box .wrap{
+    width:300px;
+    overflow:hidden;
+    border:1px solid #dedede;
+}
+.mod-login .login-box form{
+    padding: 6px 14px;
+    color:#222;
+}
+.mod-login .login-box form legend{
+    color:#222;
+    margin-bottom: 16px;
+}
+.mod-login .login-box form .in{
+    width:250px;
+}
+.ui-form-content{
+    padding-left: 4px;
+}
+.mod-login .login-box form .btn{
+    padding: 7px 12px;
+    width:264px;
+}
+.mod-login .login-box form .label{
+    line-height: 15px;
+    padding: 4px 8px;
+}
+.mod-login .login-box form .label-error{
+     width: 200px;
+    margin-bottom: 6px;
+}
+
+.mod-login .banner{
+    position: absolute;
+    top: 0px;
+    width: 670px;
+    height: 360px;
+    left:0px;
+    background: transparent url("../../img/login.png") no-repeat 0px 0px;
+}
