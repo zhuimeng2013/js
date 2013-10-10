@@ -1,0 +1,94 @@
+body{
+    background-color: #f1f1f1;
+}
+#content{
+    border: 1px solid #d7d7d7;
+    background: #fff url(../../img/line.png) -4px 0 repeat-y;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    width: 990px;
+    margin: 0 auto;
+    min-height: 500px;
+    margin-bottom: 30px;
+}
+
+.col-sub{
+    width: 140px;
+    margin-left: -100%;
+    float: left;
+    zoom:1;
+    min-height: 400px;
+    position: relative;
+    z-index: 2;
+}
+
+.col-main {
+    float: left;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    min-height: 400px;
+}
+
+.mod-menu .header{
+    height: 100px;
+}
+.mod-menu .content{
+    padding: 10px 0px;
+}
+.mod-menu .menu-item dd{
+    margin-left: 0px;
+}
+.mod-menu .menu-item ul{
+    margin: 0px;
+}
+.mod-menu .menu-item a,
+.mod-menu .mt-indicator{
+    background-image: url(../../img/icon.gif);
+    background-repeat: no-repeat;
+}
+.mod-menu .menu-item a:link, .mod-menu .menu-item a:visited {
+    display: block;
+    overflow: hidden;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 28px;
+    color: #666;
+    background-position: 17px -78px;
+    padding-left: 30px;
+    height: 28px;
+}
+.mod-menu .mt-menu-sub {
+    background: 0;
+    position: relative;
+}
+.mod-menu .unfold .mt-indicator {
+    background-position: 0 -50px;
+}
+.mod-menu .fold .mt-indicator {
+    background-position: 0 -40px;
+}
+.mod-menu .mt-indicator {
+    position: absolute;
+    overflow: hidden;
+    cursor: pointer;
+    line-height: 100px;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    margin: 9px 0 0 16px;
+}
+.mod-menu .fold .mt-menu-sub-content {
+    display: none;
+}
+.mod-menu .mt-menu-sub-content li{
+    height: 27px;
+}
+.mod-menu .mt-menu-sub-content li a:link, .mod-menu .mt-menu-sub-content li a:visited {
+    background-image: none;
+    padding-left: 37px;
+}
+.mod-menu .menu-item a:hover, .mod-menu .menu-item a.selected {
+    background-color: #e6e6e6;
+    color: #000;
+}

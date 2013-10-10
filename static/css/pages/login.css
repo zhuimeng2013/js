@@ -36,13 +36,22 @@
     padding: 7px 12px;
     width:264px;
 }
+.mod-login .login-box form .btn-s{
+    width:124px;
+
+}
 .mod-login .login-box form .label{
     line-height: 15px;
     padding: 4px 8px;
 }
 .mod-login .login-box form .label-error{
      width: 200px;
+    color:#666;
+    font-size: 12px;
     margin-bottom: 6px;
+    padding-left: 23px;
+    border:1px solid #ff8080;
+    background: #fff2f2 url("../../img/stuff.png") no-repeat -319px -449px;
 }
 
 .mod-login .banner{
