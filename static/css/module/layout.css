@@ -1,19 +1,21 @@
 body{
-    background-color: #f1f1f1;
+    background-color: #fff;
+    font-family: "microsoft yahei";
 }
 #content{
-    border: 1px solid #d7d7d7;
-    background: #fff url(../../img/line.png) -4px 0 repeat-y;
-    border-radius: 5px;
     -moz-border-radius: 5px;
-    width: 990px;
+    width: 1000px;
     margin: 0 auto;
-    min-height: 500px;
+    min-height: 360px;
     margin-bottom: 30px;
+    margin-top: 20px;
+}
+#content .grid{
+    width: 1000px;
 }
 
 .col-sub{
-    width: 140px;
+    width: 200px;
     margin-left: -100%;
     float: left;
     zoom:1;
@@ -29,66 +31,78 @@ body{
     z-index: 1;
     min-height: 400px;
 }
+.col-main .col-main-wrap{
+    min-height: 320px;
+    border:1px solid #929292;
+    margin-left: 210px;
+    _width: 790px;
+}
+
+.mod-menu{
+    width: 198px;
+    border:1px solid #929292;
+}
 
 .mod-menu .header{
-    height: 100px;
+    height: 41px;
+    line-height: 41px;
+    background: #929292 url(../../img/icon-youku.png) no-repeat 10px 2px;
+}
+.mod-menu .header h2{
+    font-size: 16px;
+    color: #fff;
+    margin: 0px;
+    padding:0px;
+    padding-left: 50px;
+    line-height: 42px;
 }
 .mod-menu .content{
-    padding: 10px 0px;
+}
+.mod-menu .menu-item{
+    margin: 0px;
+    padding:0px;
 }
 .mod-menu .menu-item dd{
     margin-left: 0px;
+    height: 38px;
+    line-height: 38px;
+    font-size: 14px;
+}
+.mod-menu .menu-item dd.menu-nodes{
+    height: auto;
+}
+.mod-menu .menu-item dd.menu-nodes ul{
+    display: none;
+}
+.mod-menu .menu-item dd.current ul{
+    display: block;
+}
+.mod-menu a.node{
+    display: block;
+    padding-left:30px;
+    border-top:1px solid #aaaaaa;
+    background-color: #e7e7e7;
+    line-height: 37px;
+    font-size: 14px;
+}
+.mod-menu dd.current a{
+    color: #ff7300;
+}
+.mod-menu .menu-item dd.current li a{
+    color: #666;
+    background-color: #fff;
 }
 .mod-menu .menu-item ul{
     margin: 0px;
+    list-style: none;
 }
-.mod-menu .menu-item a,
-.mod-menu .mt-indicator{
-    background-image: url(../../img/icon.gif);
-    background-repeat: no-repeat;
-}
-.mod-menu .menu-item a:link, .mod-menu .menu-item a:visited {
+.mod-menu .menu-item  li{
+    list-style: none;
     display: block;
-    overflow: hidden;
-    text-decoration: none;
-    font-size: 14px;
-    line-height: 28px;
-    color: #666;
-    background-position: 17px -78px;
-    padding-left: 30px;
-    height: 28px;
+    margin: 0px;
+    padding:0px;
+    height: 36px;
 }
-.mod-menu .mt-menu-sub {
-    background: 0;
-    position: relative;
-}
-.mod-menu .unfold .mt-indicator {
-    background-position: 0 -50px;
-}
-.mod-menu .fold .mt-indicator {
-    background-position: 0 -40px;
-}
-.mod-menu .mt-indicator {
-    position: absolute;
-    overflow: hidden;
-    cursor: pointer;
-    line-height: 100px;
-    top: 0;
-    width: 10px;
-    height: 10px;
-    margin: 9px 0 0 16px;
-}
-.mod-menu .fold .mt-menu-sub-content {
-    display: none;
-}
-.mod-menu .mt-menu-sub-content li{
-    height: 27px;
-}
-.mod-menu .mt-menu-sub-content li a:link, .mod-menu .mt-menu-sub-content li a:visited {
-    background-image: none;
-    padding-left: 37px;
-}
-.mod-menu .menu-item a:hover, .mod-menu .menu-item a.selected {
-    background-color: #e6e6e6;
-    color: #000;
+.mod-menu .menu-item dd.current li{
+    background-color: #fff;
 }
