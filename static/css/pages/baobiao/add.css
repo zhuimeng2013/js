@@ -1,0 +1,81 @@
+.mod-baobiao-add{
+
+}
+.mod-baobiao-add .header{
+    height: 45px;
+    background-color: #e8e6e7;
+    font-size: 16px;
+    line-height: 45px;
+    padding-left: 30px;
+    color: #8d8b8c;
+}
+.mod-baobiao-add .header .gt{
+    padding: 0px 4px;
+}
+.mod-baobiao-add .content{
+    padding-top: 20px;
+}
+.ui-form .field{
+    min-height: 30px;
+    color: #5d5d5d;
+    padding-bottom: 12px;
+}
+.ui-form .field .name{
+    width: 140px;
+    text-align: right;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    padding-right: 8px;
+}
+.ui-form .field .name .red{
+    color: #CC0000;
+    font-weight: bold;
+}
+.ui-form .field .v{
+    float: left;
+    width: 600px;
+    min-height: 30px;
+}
+.ui-form .field .v select{
+    font-size: 12px;
+    height: 28px;
+    line-height: 28px;
+    padding: 0px;
+    border-radius: 0px;
+    padding:2px;
+}
+.ui-form .field .v .ui-input{
+    border-radius: 0px;
+}
+.ui-form .field .checkbox-list table{
+    width: 100%;
+}
+.ui-form .field .checkbox-list{
+    border:1px solid #acacac;
+    padding: 12px;
+    padding-top: 4px;
+}
+.ui-form .field .checkbox-list-4 td{
+    vertical-align: middle;
+    width: 25%;
+    line-height: 24px;
+}
+.ui-form .field .checkbox-list-4 input,
+.ui-form .field input.checkbox{
+    margin-top: -3px;
+}
+.ui-form .field .checkbox-list-4 label,
+.ui-form .field label.l{
+    display: inline-block;
+    margin-bottom: 0px;
+    margin-top: 4px;
+    padding-left: 3px;
+}
+.ui-form .action{
+    padding-left: 150px;
+}
+.ui-form .action .btn{
+    margin-right: 20px;
+}

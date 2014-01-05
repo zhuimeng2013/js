@@ -19,7 +19,7 @@ body{
     margin-left: -100%;
     float: left;
     zoom:1;
-    min-height: 400px;
+    min-height:300px;
     position: relative;
     z-index: 2;
 }
@@ -32,10 +32,11 @@ body{
     min-height: 400px;
 }
 .col-main .col-main-wrap{
-    min-height: 320px;
+    min-height: 306px;
     border:1px solid #929292;
     margin-left: 210px;
     _width: 790px;
+    padding-bottom: 20px;
 }
 
 .mod-menu{
@@ -44,8 +45,8 @@ body{
 }
 
 .mod-menu .header{
-    height: 41px;
-    line-height: 41px;
+    height: 40px;
+    line-height: 40px;
     background: #929292 url(../../img/icon-youku.png) no-repeat 10px 2px;
 }
 .mod-menu .header h2{
