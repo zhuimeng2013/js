@@ -66,6 +66,9 @@
 .ui-form .field input.checkbox{
     margin-top: -3px;
 }
+.ui-form .field textarea{
+    text-align: left;
+}
 .ui-form .field .checkbox-list-4 label,
 .ui-form .field label.l{
     display: inline-block;
