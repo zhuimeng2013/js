@@ -94,6 +94,7 @@ body{
 .mod-menu .menu-item dd.current li a{
     color: #666;
     background-color: #fff;
+    font-size: 12px;
 }
 .mod-menu .menu-item ul{
     margin: 0px;
