@@ -138,3 +138,55 @@
     white-space: nowrap;
     margin-left: 0px;
 }
+.ui-form .field-bb{
+
+}
+.ui-form .field-bb .inline-pd{
+    padding-left: 14px;
+}
+.ui-form .field .sign{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    text-indent: -9999px;
+    background:transparent url(../../../img/sign.jpg) no-repeat 0px 0px;
+    border: 0 none;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.ui-form .field .sign2{
+    background-position: -63px 0px;
+}
+.ui-form .field .sign3{
+    background-position: -126px 0px;
+}
+.ui-form .field .sign4{
+    background-position: -189px 0px;
+}
+.ui-form .field .sign5{
+    background-position: -254px 0px;
+}
+.ui-form .field .sign6{
+    background-position: -317px 0px;
+}
+.ui-form .field .sign7{
+    background-position: -375px 0px;
+    width: 70px;
+}
+.ui-form .gongshi-list{
+    border: 1px solid #b0b0b0;
+    width: 500px;
+    min-height: 140px;
+    _height:140px;
+    padding:10px;
+    word-break: break-all;
+}
+.ui-form .gongshi-list .step{
+    white-space: nowrap;
+    float: left;
+    padding: 0px 3px;
+}
+.ui-form .gongshi-list .step.s{
+    color: #122b54;
+}

@@ -96,8 +96,52 @@
                                 <span>第二步：为收费科目设置公式</span>
                             </div>
                             <div class="content">
-
-
+                                <div class="field field-bb" id="select-type">
+                                   <div class="inline inline-pd" style="padding-left: 35px;"><button type="button" class="btn btn-primary" id="btn-price" data-v="$price">单价</button></div>
+                                   <div class="inline inline-pd"><button type="button" class="btn btn-primary" id="btn-count" data-v="$count">数量</button></div>
+                                   <div class="inline inline-pd">
+                                       <select style="width: 150px" class="select-field">
+                                           <option value="0">请选择系统字段</option>
+                                           <option value="$xitongziduan1">系统字段1</option>
+                                           <option value="$xitongziduan2">系统字段2</option>
+                                       </select>
+                                   </div>
+                                    <div class="inline inline-pd">
+                                        <select style="width: 150px" class="select-field">
+                                            <option>请选择录入字段</option>
+                                            <option value="$luruziduan1">录入字段1</option>
+                                            <option value="$luruziduan2">录入字段2</option>
+                                        </select>
+                                    </div>
+                                    <div class="inline inline-pd">
+                                        <select style="width: 170px" class="select-field">
+                                            <option>请选择系统衍生字段</option>
+                                            <option value="$xitongysziduan1">系统字段1</option>
+                                            <option value="$xitongysziduan2">系统字段2</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="field clearfix" id="sign-list">
+                                    <div class="wrap">
+                                        <button class="sign sign1" data-v="(" data-idx="0" style="margin-left: 35px;">左括号</button>
+                                        <button class="sign sign2" data-v=")" data-idx="1">右括号</button>
+                                        <button class="sign sign3" data-v="+" data-idx="2">加号</button>
+                                        <button class="sign sign4" data-v="-" data-idx="3">减号</button>
+                                        <button class="sign sign5" data-v="*" data-idx="4">乘号</button>
+                                        <button class="sign sign6" data-v="/" data-idx="5">除号</button>
+                                        <button class="sign sign7" data-v="" data-idx="7">回退</button>
+                                    </div>
+                                </div>
+                                <div class="field clearfix">
+                                    <div class="name" style="width: 96px;">预览公式：</div>
+                                    <div class="v">
+                                        <div class="gongshi-list" id="gongshi-list">
+                                            <span class="step">公式预览</span>
+                                        </div>
+                                    </div>
+                                    <input type="hidden" id="hidden-gongshi" name=""/>
+                                    <input type="hidden" id="hidden-gongshi-txt" name=""/>
+                                </div>
                                 <div class="action">
                                     <button type="submit" class="btn btn-primary">确定</button>
                                     <button type="reset" class="btn">取消</button>
@@ -196,6 +240,7 @@
         </div>
     </div>
     <!--footer end-->
+    <script src="../static/js/pages/shoufei/add.js"></script>
 </div>
 </body>
 </html>
