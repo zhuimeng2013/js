@@ -39,6 +39,11 @@
     width: 600px;
     min-height: 30px;
 }
+.ui-form .field .v .txt{
+    line-height: 30px;
+    color: #666;
+    font-size: 12px;
+}
 .ui-form .field .v select{
     font-size: 12px;
     height: 28px;
@@ -75,7 +80,8 @@
     display: inline-block;
     margin-bottom: 0px;
     margin-top: 4px;
-    padding-left: 3px;
+    padding-left: 5px;
+    font-size: 12px;
 }
 .ui-form .action{
     padding-left: 150px;
@@ -90,4 +96,45 @@
 }
 .ui-form .ui-datepicker-append{
     display: none;
+}
+.ui-form .selected-list{
+
+}
+.ui-form .selected-list dl{
+    margin-bottom: 10px;
+    min-height: 30px;
+    margin-top: 4px;
+}
+.ui-form .selected-list dt,
+.ui-form .selected-list dd{
+    float: left;
+    height: 23px;
+    line-height: 23px;
+    font-size: 12px;
+}
+.ui-form .selected-list dd h4{
+    font-size: 12px;
+    padding: 0px;
+    margin: 0px;
+    padding-top: 5px;
+    display: inline;
+}
+.ui-form .selected-list dd .cancle{
+    background: transparent url("../../../img/cancle.jpg") no-repeat 0px 0px;
+    position: relative;
+    top: 1px;
+    left: 2px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+}
+.ui-form .selected-list dt{
+    width: 70px;
+    font-weight: bold;
+}
+.ui-form .selected-list dd{
+    margin-right: 18px;
+    white-space: nowrap;
+    margin-left: 0px;
 }
