@@ -36,7 +36,6 @@ body{
     border:1px solid #929292;
     margin-left: 210px;
     _width: 790px;
-    padding-bottom: 20px;
 }
 
 .mod-menu{
@@ -85,6 +84,9 @@ body{
     background-color: #e7e7e7;
     line-height: 37px;
     font-size: 14px;
+}
+.mod-menu ul a.node{
+    line-height: 35px;
 }
 .mod-menu dd.current a{
     color: #ff7300;

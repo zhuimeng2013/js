@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>新增项目</title>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <link type="text/css" rel="stylesheet" media="all" href="../static/css/lib/lib.css">
+    <link type="text/css" rel="stylesheet" media="all" href="../static/css/module/topbar.css">
+    <link type="text/css" rel="stylesheet" media="all" href="../static/css/module/header.css">
+    <link type="text/css" rel="stylesheet" media="all" href="../static/css/module/footer.css">
+    <link type="text/css" rel="stylesheet" media="all" href="../static/css/module/layout.css">
+    <link type="text/css" rel="stylesheet" media="all" href="../static/css/module/ui/add.css">
+    <script src="../static/js/lib/lib.js"></script>
+    <style>
+            .ui-form select{
+                width: 300px;
+            }
+            .ui-form .field .v  .ui-input{
+                width: 284px;
+            }
+    </style>
+    <base target="_self"/>
+</head>
+<body>
+<div class="doc" id="doc">
+    <!--toolbar start-->
+    <div class="topbar" id="topbar">
+        <div class="layout">
+            <div class="grid">
+                <div class="mod-toolbar">
+                    <p>你好！<span class="user-name">方健华</span><a href=""><span class="clock">3</span></a>&nbsp;&nbsp;<a href="./user-manage.html" target="_self" class="login">修改密码</a>&nbsp;&nbsp;<a href="./loginout.html" target="_self" class="login">退出</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--toolbar end-->
+    <!--logo-->
+    <div class="header" id="header">
+        <div class="layout">
+            <div class="grid">
+                <div class="mod-masthead">
+                    <a href="./index.html"><img src="../static/img/logo.png" /></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--logo end-->
+    <div class="content" id="content">
+        <div class="layout">
+            <div class="grid">
+                <!--右侧内容开始-->
+                <div class="col-main">
+                    <div class="col-main-wrap clearfix">
+                        <div class="mod-baobiao-add ui-form">
+                            <div class="header">
+                                <span>系统管理功能</span><span class="gt">&gt;</span><span>新增项目</span>
+                            </div>
+                            <div class="content">
+                                <div class="field clearfix">
+                                    <div class="name"><span class="red">*</span>项目名称：</div>
+                                    <div class="v">
+                                        <input type="text" class="ui-input"/>
+                                    </div>
+                                </div>
+                                <div class="field clearfix">
+                                    <div class="name"><span class="red">*</span>客户名称：</div>
+                                    <div class="v">
+                                        <select>
+                                            <option>2014</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="field clearfix">
+                                    <div class="name"><span class="red">*</span>客户编码：</div>
+                                    <div class="v">
+                                        <input type="text" class="ui-input"/>
+                                    </div>
+                                </div>
+                                <div class="field clearfix">
+                                    <div class="name"><span class="red">*</span>仓库名称：</div>
+                                    <div class="v">
+                                        <select>
+                                            <option>字段1</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="field clearfix">
+                                    <div class="name"><span class="red">*</span>合作方式：</div>
+                                    <div class="v">
+                                        <select>
+                                            <option>字段1</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="field clearfix">
+                                    <div class="name"><span class="red">*</span>优库业务：</div>
+                                    <div class="v">
+                                        <select>
+                                            <option>字段1</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="field clearfix">
+                                    <div class="name"><span class="red">*</span>是否启用：</div>
+                                    <div class="v">
+                                        <input type="checkbox" class="checkbox"/><label class="l">启用</label>
+                                    </div>
+                                </div>
+                                <div class="action">
+                                    <button type="submit" class="btn btn-primary">确定</button>
+                                    <button type="reset" class="btn">取消</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--右侧内容结束-->
+                <!--左侧菜单开始-->
+                <div class="col-sub">
+                    <div class="mod-menu">
+                        <div class="header">
+                            <h2>优库结算系统</h2>
+                        </div>
+                        <div class="content">
+                            <dl class="menu-item">
+                                <dd>
+                                    <a href="" class="node">优库结算账单</a>
+                                </dd>
+                                <dd class="menu-item menu-nodes">
+                                    <a href="#" class="node">优库结算报表</a>
+                                    <ul class="">
+                                        <li>
+                                            <a href="" class="node">账单总览</a>
+                                        </li>
+                                    </ul>
+                                </dd>
+                                <dd class="menu-nodes fold">
+                                    <a href="#" class="node">优库数据记录</a>
+                                    <ul>
+                                        <li>
+                                            <a href="./shuju-add.html" class="node">录入数据</a>
+                                        </li>
+                                    </ul>
+                                </dd>
+                                <dd class="menu-nodes fold">
+                                    <a href="#" class="node">项目收费配置</a>
+                                    <ul class="mt-menu-sub-content">
+                                        <li>
+                                            <a href="" class="node">新增配置</a>
+                                        </li>
+                                    </ul>
+                                </dd>
+                                <dd class="menu-nodes fold">
+                                    <a href="#" class="node">优库收费科目</a>
+                                    <ul>
+                                        <li>
+                                            <a href="" class="node">新增科目</a>
+                                        </li>
+                                    </ul>
+                                </dd>
+                                <dd class="menu-nodes fold">
+                                    <a href="#" class="node">优库字段管理</a>
+                                    <ul>
+                                        <li class="current">
+                                            <a href="" class="node">新增字段</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="node" >提醒功能</a>
+                                        </li>
+                                    </ul>
+                                </dd>
+                                <dd class="menu-nodes fold current">
+                                    <a href="#" class="node">系统管理功能</a>
+                                    <ul>
+                                        <li>
+                                            <a href="" class="node">用户管理</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="node" >角色管理</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="node" >项目管理</a>
+                                        </li>
+                                        <li>
+                                            <a href="./xitong-add.html" class="node">新增项目</a>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <!--左侧菜单结束-->
+            </div>
+        </div>
+    </div>
+    <!--footer start-->
+    <div class="footer clearfix" id="footer">
+        <div class="layout">
+            <div class="grid">
+                <div class="mod-footer">
+                    <div class="content">
+                        <p>©2012 800best.com 版权所有 ICP证: 浙B2-20070189</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer end-->
+</div>
+</body>
+</html>
