@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>录入字段明细表</title>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <link type="text/css" rel="stylesheet" media="all" href="../static/css/lib/lib.css">
+    <link type="text/css" rel="stylesheet" media="all" href="../static/css/module/topbar.css">
+    <link type="text/css" rel="stylesheet" media="all" href="../static/css/module/header.css">
+    <link type="text/css" rel="stylesheet" media="all" href="../static/css/module/footer.css">
+    <link type="text/css" rel="stylesheet" media="all" href="../static/css/module/layout.css">
+    <link type="text/css" rel="stylesheet" media="all" href="../static/css/module/table-common.css">
+    <link type="text/css" rel="stylesheet" media="all" href="../static/css/pages/baobiao/moban.css">
+    <link type="text/css" rel="stylesheet" media="all" href="../static/css/pages/baobiao/query.css">
+    <link type="text/css" rel="stylesheet" media="all" href="../static/plugins/jquery-ui/css/ui.css">
+    <script src="../static/js/lib/lib.js"></script>
+    <script src="../static/plugins/jquery-ui/js/ui.js"></script>
+    <base target="_self"/>
+</head>
+<body>
+<div class="doc" id="doc">
+    <!--toolbar start-->
+    <div class="topbar" id="topbar">
+        <div class="layout">
+            <div class="grid">
+                <div class="mod-toolbar">
+                    <p>你好！<span class="user-name">方健华</span><a href=""><span class="clock">3</span></a>&nbsp;&nbsp;<a href="./user-manage.html" target="_self" class="login">修改密码</a>&nbsp;&nbsp;<a href="./loginout.html" target="_self" class="login">退出</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--toolbar end-->
+    <!--logo-->
+    <div class="header" id="header">
+        <div class="layout">
+            <div class="grid">
+                <div class="mod-masthead">
+                    <a href="./index.html"><img src="../static/img/logo.png" /></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--logo end-->
+    <div class="content" id="content">
+        <div class="layout">
+            <div class="grid">
+                <!--右侧内容开始-->
+                <div class="col-main">
+                    <div class="col-main-wrap">
+                        <div class="mod-moban">
+                            <div class="header">
+                                <span>项目：广州惠美服装有限公司</span>
+                            </div>
+                            <div class="mod-filter">
+                                <form action="">
+                                    <div class="first-layer fd-clr">
+                                        <label>
+                                            <span>业务日期</span>
+                                            <input size="16" type="text" value="2013-10-12" style="width:100px" class="datepicker">
+                                            <span>至</span>
+                                            <input size="16" type="text" value="" style="width:100px" class="datepicker">
+                                        </label>
+                                    </div>
+                                    <div class="second-layer fd-clr">
+                                        <label>
+                                            <span>收费科目</span>
+                                            <select name="tableType">
+                                                <option value="A">A型</option>
+                                                <option selected="true" value="B">B型</option>
+                                                <option value="C">C型</option>
+                                            </select>
+                                        </label>
+                                        <label>
+                                            <span>录入字段</span>
+                                            <select name="tableType">
+                                                <option value="A">A型</option>
+                                                <option selected="true" value="B">B型</option>
+                                                <option value="C">C型</option>
+                                            </select>
+                                        </label>
+                                        <input class="submit" type="submit" value="查询"/>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="table-box">
+                                <table class="table-content">
+                                    <tr>
+                                        <th>业务日期</th>
+                                        <th>数量</th>
+                                        <th>单位</th>
+                                        <th>登记人</th>
+                                        <th>登记时间</th>
+                                        <th>操作</th>
+                                    </tr>
+                                    <tr>
+                                        <td>淡淡的</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td class="operation">
+                                            <span><a href="#">修改</a></span>
+                                            <span><a href="#">删除</a></span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="pagination">
+                                <ul>
+                                    <li class="disabled"><a href="#">上一页</a></li>
+                                    <li class="active"><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li><a href="#">6</a></li>
+                                    <li><a href="#">7</a></li>
+                                    <li class="disabled"><a href="#">...</a></li>
+                                    <li><a href="#">8</a></li>
+                                    <li><a href="#">下一页</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--右侧内容结束-->
+                <!--左侧菜单开始-->
+                <div class="col-sub">
+                    <div class="mod-menu">
+                        <div class="header">
+                            <h2>优库结算系统</h2>
+                        </div>
+                        <div class="content">
+                            <dl class="menu-item current">
+                                <dd>
+                                    <a href="" class="node">优库结算账单</a>
+                                </dd>
+                                <dd class="menu-item menu-nodes">
+                                    <a href="#" class="node">优库结算报表</a>
+                                    <ul class="">
+                                        <li>
+                                            <a href="" class="node">账单总览</a>
+                                        </li>
+                                    </ul>
+                                </dd>
+                                <dd class="menu-nodes fold">
+                                    <a href="#" class="node">优库数据记录</a>
+                                    <ul>
+                                        <li>
+                                            <a href="" class="node">录入数据</a>
+                                        </li>
+                                    </ul>
+                                </dd>
+                                <dd class="menu-nodes fold">
+                                    <a href="#" class="node">项目收费配置</a>
+                                    <ul class="mt-menu-sub-content">
+                                        <li>
+                                            <a href="" class="node">新增配置</a>
+                                        </li>
+                                    </ul>
+                                </dd>
+                                <dd class="menu-nodes fold">
+                                    <a href="#" class="node">优库收费科目</a>
+                                    <ul>
+                                        <li>
+                                            <a href="" class="node">新增科目</a>
+                                        </li>
+                                    </ul>
+                                </dd>
+                                <dd class="menu-nodes fold">
+                                    <a href="#" class="node">优库字段管理</a>
+                                    <ul>
+                                        <li>
+                                            <a href="" class="node">新增字段</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="node" >提醒功能</a>
+                                        </li>
+                                    </ul>
+                                </dd>
+                                <dd class="menu-nodes">
+                                    <a href="#" class="node">系统管理功能</a>
+                                    <ul>
+                                        <li>
+                                            <a href="" class="node">用户管理</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="node" >角色管理</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="node" >项目管理</a>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <!--左侧菜单结束-->
+            </div>
+        </div>
+    </div>
+    <!--footer start-->
+    <div class="footer clearfix" id="footer">
+        <div class="layout">
+            <div class="grid">
+                <div class="mod-footer">
+                    <div class="content">
+                        <p>©2012 800best.com 版权所有 ICP证: 浙B2-20070189</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer end-->
+</div>
+<script src="../static/js/pages/baobiao/datepicker.js"></script>
+</body>
+</html>
