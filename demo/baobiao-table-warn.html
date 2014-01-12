@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>报表模版页面</title>
+    <title>提醒管理</title>
     <meta name="description" content=""/>
     <meta name="keywords" content=""/>
     <link type="text/css" rel="stylesheet" media="all" href="../static/css/lib/lib.css">
@@ -12,7 +12,7 @@
     <link type="text/css" rel="stylesheet" media="all" href="../static/css/module/layout.css">
     <link type="text/css" rel="stylesheet" media="all" href="../static/css/module/table-common.css">
     <link type="text/css" rel="stylesheet" media="all" href="../static/css/pages/baobiao/moban.css">
-    <link type="text/css" rel="stylesheet" media="all" href="../static/css/pages/baobiao/moban.css">
+    <link type="text/css" rel="stylesheet" media="all" href="../static/css/pages/baobiao/warn.css">
     <script src="../static/js/lib/lib.js"></script>
     <base target="_self"/>
 </head>
@@ -50,37 +50,71 @@
                             <div class="header">
                                 <span>优库结算报表</span><span class="gt">&gt;</span><span>报表模版管理</span><span class="gt">&gt;</span><span>优库结算报表</span>
                             </div>
+                            <div class="mod-filter">
+                                <form action="">
+                                    <div class="second-layer fd-clr">
+                                        <label>
+                                            <span>请选择项目</span>
+                                            <select name="tableType">
+                                                <option>项目一</option>
+                                                <option selected="true">项目二</option>
+                                            </select>
+                                        </label>
+                                        <label>
+                                            <span>请选择责任人</span>
+                                            <select name="tableType">
+                                                <option>工号 姓名</option>
+                                                <option>某某某某</option>
+                                            </select>
+                                        </label>
+                                        <input class="submit" type="submit" value="查询"/>
+                                    </div>
+                                </form>
+                            </div>
                             <div class="table-box">
-                                <table
+                                <div class="table-header">
+                                    <ul class="other-operation">
+                                        <li><a href="#">新增提醒</a></li>
+                                    </ul>
+                                </div>
                                 <table class="table-content">
                                     <tr>
-                                        <th>报表名称</th>
-                                        <th>所属项目</th>
-                                        <th>说明</th>
-                                        <th>启用</th>
+                                        <th>项目</th>
+                                        <th>录入字段名称</th>
+                                        <th>录入周期</th>
+                                        <th>提醒时间</th>
+                                        <th>责任人</th>
+                                        <th>邮箱</th>
                                         <th>操作</th>
                                     </tr>
                                     <tr>
                                         <td></td>
                                         <td></td>
                                         <td></td>
-                                        <td class="enable">启用</td>
-                                        <td class="operation">
-                                            <span><a href="#">编辑</a></span>
-                                            <span><a href="#">查看</a></span>
-                                        </td>
-                                    </tr>
-                                    <tr>
                                         <td></td>
                                         <td></td>
                                         <td></td>
-                                        <td class="enable">停用</td>
                                         <td class="operation">
                                             <span><a href="#">编辑</a></span>
                                             <span><a href="#">查看</a></span>
                                         </td>
                                     </tr>
                                 </table>
+                            </div>
+                            <div class="pagination">
+                                <ul>
+                                    <li class="disabled"><a href="#">上一页</a></li>
+                                    <li class="active"><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li><a href="#">6</a></li>
+                                    <li><a href="#">7</a></li>
+                                    <li class="disabled"><a href="#">...</a></li>
+                                    <li><a href="#">8</a></li>
+                                    <li><a href="#">下一页</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>

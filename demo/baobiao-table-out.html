@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>报表管理</title>
+    <title>出库表单</title>
     <meta name="description" content=""/>
     <meta name="keywords" content=""/>
     <link type="text/css" rel="stylesheet" media="all" href="../static/css/lib/lib.css">
@@ -12,8 +12,10 @@
     <link type="text/css" rel="stylesheet" media="all" href="../static/css/module/layout.css">
     <link type="text/css" rel="stylesheet" media="all" href="../static/css/module/table-common.css">
     <link type="text/css" rel="stylesheet" media="all" href="../static/css/pages/baobiao/moban.css">
-    <link type="text/css" rel="stylesheet" media="all" href="../static/css/pages/baobiao/manager.css">
+    <link type="text/css" rel="stylesheet" media="all" href="../static/css/pages/baobiao/query.css">
+    <link type="text/css" rel="stylesheet" media="all" href="../static/plugins/jquery-ui/css/ui.css">
     <script src="../static/js/lib/lib.js"></script>
+    <script src="../static/plugins/jquery-ui/js/ui.js"></script>
     <base target="_self"/>
 </head>
 <body>
@@ -48,120 +50,40 @@
                     <div class="col-main-wrap">
                         <div class="mod-moban">
                             <div class="header">
-                                <span>优库结算报表</span><span class="gt">&gt;</span><span>报表模版管理</span><span class="gt">&gt;</span><span>优库结算报表</span>
+                                <span>项目：广州惠美服装有限公司</span>
                             </div>
                             <div class="mod-filter">
                                 <form action="">
-                                    <div class="first-layer fd-clr">
-                                        <label>
-                                            <span>请输入报表名称</span>
-                                            <input type="text" name="tableName" value=""/>
-                                        </label>
-                                        <label>
-                                            <span>报表类型</span>
-                                            <select name="tableType">
-                                                <option value="A">A型</option>
-                                                <option selected="true" value="B">B型</option>
-                                                <option value="C">C型</option>
-                                            </select>
-                                        </label>
-                                    </div>
                                     <div class="second-layer fd-clr">
                                         <label>
-                                            <span>是否启用</span>
-                                            <select name="tableType">
-                                                <option value="true">是</option>
-                                                <option selected="true" value＝"false">否</option>
-                                            </select>
-                                        </label>
-                                        <label>
-                                            <span>请选择项目</span>
-                                            <select name="tableType">
-                                                <option value="true">是</option>
-                                                <option selected="true" value＝"false">否</option>
-                                            </select>
+                                            <span>业务日期</span>
+                                            <input size="16" type="text" value="2013-10-12" style="width:100px" class="datepicker">
+                                            <span>至</span>
+                                            <input size="16" type="text" value="" style="width:100px" class="datepicker">
                                         </label>
                                         <input class="submit" type="submit" value="查询"/>
                                     </div>
                                 </form>
                             </div>
                             <div class="table-box">
-                                <div class="table-header">
-                                    <ul class="selectors ms-yh">
-                                        <li class="current"><a href="#">汇总报表</a></li>
-                                        <li><a href="#">明细报表</a></li>
-                                    </ul>
-                                    <ul class="other-operation">
-                                        <li><a href="#">新建报表模版</a></li>
-                                    </ul>
-                                </div>
                                 <table class="table-content">
                                     <tr>
-                                        <th>报表名称</th>
-                                        <th>所属项目</th>
-                                        <th>说明</th>
-                                        <th>启用</th>
-                                        <th>操作</th>
+                                        <th>客户业务单号</th>
+                                        <th>下单时间</th>
+                                        <th>总重量</th>
+                                        <th>总净重</th>
+                                        <th>总件数</th>
+                                        <th>总品项</th>
+                                        <th>包裹数</th>
                                     </tr>
                                     <tr>
+                                        <td>淡淡的</td>
                                         <td></td>
                                         <td></td>
                                         <td></td>
-                                        <td class="enable">启用</td>
-                                        <td class="operation">
-                                            <span><a href="#">编辑</a></span>
-                                            <span><a href="#">查看</a></span>
-                                        </td>
-                                    </tr>
-                                    <tr>
                                         <td></td>
                                         <td></td>
                                         <td></td>
-                                        <td class="enable">启用</td>
-                                        <td class="operation">
-                                            <span><a href="#">编辑</a></span>
-                                            <span><a href="#">查看</a></span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td class="disable">停用</td>
-                                        <td class="operation">
-                                            <span><a href="#">编辑</a></span>
-                                            <span><a href="#">查看</a></span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td class="enable">停用</td>
-                                        <td class="operation">
-                                            <span><a href="#">编辑</a></span>
-                                            <span><a href="#">查看</a></span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td class="enable">停用</td>
-                                        <td class="operation">
-                                            <span><a href="#">编辑</a></span>
-                                            <span><a href="#">查看</a></span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td class="enable">停用</td>
-                                        <td class="operation">
-                                            <span><a href="#">编辑</a></span>
-                                            <span><a href="#">查看</a></span>
-                                        </td>
                                     </tr>
                                 </table>
                             </div>
@@ -274,5 +196,6 @@
     </div>
     <!--footer end-->
 </div>
+<script src="../static/js/pages/baobiao/datepicker.js"></script>
 </body>
 </html>
