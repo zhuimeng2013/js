@@ -1,0 +1,40 @@
+.mod-filter{
+	padding: 15px 0px;
+	border-bottom: solid #929292 1px;
+}
+.mod-filter form{
+	margin-bottom: 0px;
+}
+.mod-filter div.first-layer{
+	padding-bottom: 8px;
+	border-bottom: dashed 1px #999;
+}
+.mod-filter div.second-layer{
+	padding-top: 12px;
+}
+.mod-filter label{
+	float: left;
+	padding-left: 15px;
+	height: 27px;
+	line-height: 25px;
+	width: 300px;
+}
+.mod-filter label span{
+	display: inline-block;
+	width: 100px;
+	text-align: right;
+}
+.mod-filter label input,
+.mod-filter label select{
+	height: 25px;
+	border:solid #999 1px;
+	padding: 0px;
+	width: 150px;
+}
+.mod-filter input.submit{
+	width: 80px;
+	height: 25px;
+	background: #fd811d;
+	border:solid #999 1px;
+	color: #fff;
+}
