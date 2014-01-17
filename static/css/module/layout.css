@@ -107,7 +107,7 @@ body{
     padding:0px;
     height: 36px;
 }
-.mod-menu .menu-item  li.current a{
+.mod-menu .menu-item dd.current li.current a{
     color: #ff7300;
 }
 .mod-menu .menu-item dd.current li{
