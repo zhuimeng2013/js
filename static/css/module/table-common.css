@@ -86,3 +86,9 @@ table.table-content td.operation a{
 	padding-right: 15px;
 	margin-top: 0px;
 }
+table.table-content-tx{
+    margin-bottom: 10px;
+}
+table.table-content-tx td{
+    height: 38px;
+}

@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>编辑收费科目</title>
+    <title>查看收费科目</title>
     <meta name="description" content=""/>
     <meta name="keywords" content=""/>
     <link type="text/css" rel="stylesheet" media="all" href="../static/css/lib/lib.css">
@@ -46,46 +46,36 @@
                 <div class="col-main-wrap clearfix">
                     <div class="mod-baobiao-add ui-form">
                         <div class="header">
-                            <span>优库收费科目</span><span class="gt">&gt;</span><span>编辑收费科目</span>
+                            <span>优库收费科目</span><span class="gt">&gt;</span><span>查看收费科目</span>
                         </div>
                         <div class="content">
                             <div class="field clearfix">
-                                <div class="name"><span class="red">*</span>请选择收费科目类型：</div>
+                                <div class="name">收费科目类型：</div>
                                 <div class="v">
-                                    <select>
-                                        <option>类型1</option>
-                                        <option>类型2</option>
-                                    </select>
+                                    <p class="txt">类型1</p>
                                 </div>
                             </div>
                             <div class="field clearfix">
-                                <div class="name"><span class="red">*</span>所属项目：</div>
+                                <div class="name">所属项目：</div>
                                 <div class="v">
-                                    <select>
-                                        <option>项目1</option>
-                                        <option>项目2</option>
-                                    </select>
+                                    <p class="txt">项目2</p>
                                 </div>
                             </div>
                             <div class="field clearfix">
-                                <div class="name"><span class="red">*</span>收费科目名称：</div>
+                                <div class="name">收费科目名称：</div>
                                 <div class="v">
-                                    <select>
-                                        <option>聚划算</option>
-                                    </select>
+                                    <p class="txt">聚划算</p>
                                 </div>
                             </div>
 
                             <div class="field clearfix">
                                 <div class="name">说明：</div>
                                 <div class="v">
-                                    <textarea style="width: 300px;height: 120px">
-
-                                    </textarea>
+                                    <p class="txt">说明</p>
                                 </div>
                             </div>
                             <div class="field clearfix">
-                                <div class="name"><span class="red">*</span>是否启用：</div>
+                                <div class="name">是否启用：</div>
                                 <div class="v">
                                     <input type="checkbox" class="checkbox"/><label class="l">启用</label>
                                 </div>
@@ -93,8 +83,8 @@
 
                         </div>
 
-                        <div class="content" style="border-top:1px dotted #ccc;">
-                            <div class="field field-bb" id="select-type">
+                        <div class="content">
+                            <div class="field field-bb" id="select-type" style="display: none;">
                                 <div class="inline inline-pd" style="padding-left: 35px;"><button type="button" class="btn btn-primary" id="btn-price" data-v="$price">单价</button></div>
                                 <div class="inline inline-pd"><button type="button" class="btn btn-primary" id="btn-count" data-v="$count">数量</button></div>
                                 <div class="inline inline-pd">
@@ -119,7 +109,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="field clearfix" id="sign-list">
+                            <div class="field clearfix" id="sign-list" style="display: none;">
                                 <div class="wrap">
                                     <button class="sign sign1" data-v="(" data-idx="0" style="margin-left: 35px;">左括号</button>
                                     <button class="sign sign2" data-v=")" data-idx="1">右括号</button>
@@ -140,7 +130,7 @@
                                 <input type="hidden" id="hidden-gongshi" name="" value="(|$price|+|$count|)"/>
                                 <input type="hidden" id="hidden-gongshi-txt" name="" value="(|单价|+|数量|)"/>
                             </div>
-                            <div class="action">
+                            <div class="action" style="display: none;">
                                 <button type="submit" class="btn btn-primary">确定</button>
                                 <button type="reset" class="btn">取消</button>
                             </div>

@@ -190,3 +190,23 @@
 .ui-form .gongshi-list .step.s{
     color: #122b54;
 }
+.ui-form .content .hd{
+    background: transparent url(../../../img/step2.jpg) repeat-x 0px -12px;
+}
+.ui-form .content .hd .wrap{
+    background: transparent url(../../../img/step1.jpg) no-repeat center -9px;
+    padding-top: 30px;
+    text-align: center;
+}
+.ui-form .content .hd h3{
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    background-color: #ccc;
+    display: inline-block;
+    padding: 0px 16px;
+    margin: 0px;
+    margin-bottom: 10px;
+    font-weight: normal;
+}

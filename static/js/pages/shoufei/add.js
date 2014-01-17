@@ -25,6 +25,7 @@ jQuery(function($){
           if(v1&&v2){
               gongshiCache = v1.split('|');
               gongshiCacheHtml = v2.split('|');
+
               if(gongshiCache.length==gongshiCacheHtml.length){
                   for(var i= 0,len=gongshiCacheHtml.length;i<len;i++){
                       if($.inArray(gongshiCacheHtml[i],signArry)){
@@ -81,7 +82,7 @@ jQuery(function($){
             gongshiCache.push(step);
             postConatiner.val(gongshiCache.join('|'));
 
-            gongshiCacheHtml.push(name);
+            gongshiCacheHtml.push(step);
             postContainerText.val(gongshiCacheHtml.join('|'));
 
             gongshiCacheDisplayHtml.push('<span class="step s">'+step+'</span>');
@@ -90,7 +91,7 @@ jQuery(function($){
         delStep:function(step){
             gongshiCache.pop();
             gongshiCacheHtml.pop();
-            gongshiCacheDisplayHtml.push();
+            gongshiCacheDisplayHtml.pop();
 
             postConatiner.val(gongshiCache.join('|'));
             postContainerText.val(gongshiCacheHtml.join('|'));
