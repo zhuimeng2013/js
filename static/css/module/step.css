@@ -10,11 +10,11 @@
 
 .mod-step li{
     list-style: none;
-    height: 35px;
-    line-height: 35px;
+    height: 46px;
+    line-height: 46px;
     float: left;
     padding-left: 5px;
-    font-weight: 700;
+    font-weight: 500;
     color:#ff811d;
 }
 .mod-step li a{
@@ -24,7 +24,7 @@
 .mod-step li span.narrow{
     display: inline-block;
     width: 20px;
-    background: url("../../img/step-narrow.png") no-repeat 8px 10px;
+    background: url("../../img/step-narrow.png") no-repeat 8px 16px;
 }
 
 .company-name{

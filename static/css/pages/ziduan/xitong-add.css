@@ -1,0 +1,67 @@
+.pipeline{
+    float: left;
+}
+
+.pipeline-1{
+    width: 350px;
+}
+.mod-ziduan-list{
+    border:1px solid #828282;
+    min-height: 300px;
+    position: relative;
+    margin-left: 12px;
+    padding-left: 150px;
+    margin-bottom: 20px;
+}
+.mod-ziduan-list .hd{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 300px;
+}
+.mod-ziduan-list .hd dl{
+    margin: 0px;
+    background-color: #fff;
+}
+.mod-ziduan-list .hd dd{
+    height: 44px;
+    line-height: 44px;
+    border-bottom:1px solid #828282;
+    width: 150px;
+    margin: 0px;
+    overflow: hidden;
+}
+.mod-ziduan-list .hd dd a{
+    display: block;
+    padding-left: 35px;
+    background: transparent url(../../../img/p.png) no-repeat 20px 18px;
+}
+.mod-ziduan-list .hd dd.selected a{
+    background-color: #ffc6c5;
+}
+.mod-ziduan-list .hd dd a:hover{
+    background-color: #ffc6c5;
+}
+.mod-ziduan-list .hd dd.first{
+    border-top:0 none;
+}
+.mod-ziduan-list .ziduan-items{
+    display: none;
+    border-left:1px solid #828282;
+    min-height: 300px;
+    _height:300px;
+    margin: 0px;
+}
+.mod-ziduan-list .ziduan-items dd{
+    height: 26px;
+    line-height: 25px;
+    border-bottom:0px solid #828282;
+    width: 165px;
+    padding-left: 20px;
+    margin: 0px;
+    padding-top: 5px;
+}
+.mod-ziduan-list #ziduan-items1{
+    display: block;
+
+}
