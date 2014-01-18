@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>账单总览</title>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <link type="text/css" rel="stylesheet" media="all" href="../static/css/lib/lib.css">
+    <link type="text/css" rel="stylesheet" media="all" href="../static/css/module/topbar.css">
+    <link type="text/css" rel="stylesheet" media="all" href="../static/css/module/header.css">
+    <link type="text/css" rel="stylesheet" media="all" href="../static/css/module/footer.css">
+    <link type="text/css" rel="stylesheet" media="all" href="../static/css/module/layout.css">
+    <link type="text/css" rel="stylesheet" media="all" href="../static/css/module/table-common.css">
+    <link type="text/css" rel="stylesheet" media="all" href="../static/css/module/mod-dialog.css">
+    <link type="text/css" rel="stylesheet" media="all" href="../static/css/pages/baobiao/moban.css">
+    <link type="text/css" rel="stylesheet" media="all" href="../static/css/pages/baobiao/manager.css">
+    <link type="text/css" rel="stylesheet" media="all" href="../static/css/pages/baobiao/zhangdan-zonglan.css">
+    <script src="../static/js/lib/lib.js"></script>
+    <base target="_self"/>
+</head>
+<body>
+<div class="doc" id="doc">
+    <!--toolbar start-->
+    <div class="topbar" id="topbar">
+        <div class="layout">
+            <div class="grid">
+                <div class="mod-toolbar">
+                    <p>你好！<span class="user-name">方健华</span><a href=""><span class="clock">3</span></a>&nbsp;&nbsp;<a href="./user-manage.html" target="_self" class="login">修改密码</a>&nbsp;&nbsp;<a href="./loginout.html" target="_self" class="login">退出</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--toolbar end-->
+    <!--logo-->
+    <div class="header" id="header">
+        <div class="layout">
+            <div class="grid">
+                <div class="mod-masthead">
+                    <a href="./index.html"><img src="../static/img/logo.png" /></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--logo end-->
+    <div class="content" id="content">
+        <div class="layout">
+            <div class="grid">
+                <!--右侧内容开始-->
+                <div class="col-main">
+                    <div class="col-main-wrap">
+                        <div class="mod-moban">
+                            <div class="header">
+                                【项目名称】【账单周期年月】对账单
+                            </div>
+                            <div class="table-box">
+                                <div class="table-header">
+                                    Billing Summar本月账单汇总信息
+                                </div>
+                                <table class="table-content" style="width:560px;">
+                                    <tr>
+                                        <td>Bill Period账单周期</td>
+                                        <td>2013年7月1日-2013年7月31日</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bill Amoun账单金额</td>
+                                        <td>&yen;3000,000,000(仅为优库部分)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Date 出具日期</td>
+                                        <td>2013年9月1日</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="header">
+                                优库费用
+                            </div>
+                            <div class="table-box">
+                                <table class="table-content">
+                                    <tr>
+                                        <th>结算项目</th>
+                                        <th>单位</th>
+                                        <th>单价</th>
+                                        <th>数量</th>
+                                        <th>公式</th>
+                                        <th>金额</th>
+                                        <th>备注</th>
+                                        <th>操作</th>
+                                    </tr>
+                                    <tr>
+                                        <td>结算项目</td>
+                                        <td>单位</td>
+                                        <td>单价</td>
+                                        <td>数量</td>
+                                        <td>公式</td>
+                                        <td>金额</td>
+                                        <td>备注</td>
+                                        <td class="operation">
+                                            <span class="edit">编辑</span>
+                                            &nbsp;
+                                            <span class="delete">删除</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>结算项目</td>
+                                        <td>单位</td>
+                                        <td>单价</td>
+                                        <td>数量</td>
+                                        <td>公式</td>
+                                        <td>金额</td>
+                                        <td>备注</td>
+                                        <td class="operation">
+                                            <span class="edit">编辑</span>
+                                            &nbsp;
+                                            <span class="delete">删除</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>结算项目</td>
+                                        <td>单位</td>
+                                        <td>单价</td>
+                                        <td>数量</td>
+                                        <td>公式</td>
+                                        <td>金额</td>
+                                        <td>备注</td>
+                                        <td class="operation">
+                                            <span class="edit">编辑</span>
+                                            &nbsp;
+                                            <span class="delete">删除</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="mod-options">
+                                <span><a href="#">新增一次性收费科目</a></span>
+                                <span><a href="#">导出Excel</a></span>
+                                <span><a href="#">撤销账单</a></span>
+                                <span><a href="#">提交对账</a></span>
+                                <span><a href="#">对账完成</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--右侧内容结束-->
+                <!--左侧菜单开始-->
+                <div class="col-sub">
+                    <div class="mod-menu">
+                        <div class="header">
+                            <h2>优库结算系统</h2>
+                        </div>
+                        <div class="content">
+                            <dl class="menu-item current">
+                                <dd>
+                                    <a href="" class="node">优库结算账单</a>
+                                </dd>
+                                <dd class="menu-item menu-nodes">
+                                    <a href="#" class="node">优库结算报表</a>
+                                    <ul class="">
+                                        <li>
+                                            <a href="" class="node">账单总览</a>
+                                        </li>
+                                    </ul>
+                                </dd>
+                                <dd class="menu-nodes fold">
+                                    <a href="#" class="node">优库数据记录</a>
+                                    <ul>
+                                        <li>
+                                            <a href="" class="node">录入数据</a>
+                                        </li>
+                                    </ul>
+                                </dd>
+                                <dd class="menu-nodes fold">
+                                    <a href="#" class="node">项目收费配置</a>
+                                    <ul class="mt-menu-sub-content">
+                                        <li>
+                                            <a href="" class="node">新增配置</a>
+                                        </li>
+                                    </ul>
+                                </dd>
+                                <dd class="menu-nodes fold">
+                                    <a href="#" class="node">优库收费科目</a>
+                                    <ul>
+                                        <li>
+                                            <a href="" class="node">新增科目</a>
+                                        </li>
+                                    </ul>
+                                </dd>
+                                <dd class="menu-nodes fold">
+                                    <a href="#" class="node">优库字段管理</a>
+                                    <ul>
+                                        <li>
+                                            <a href="" class="node">新增字段</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="node" >提醒功能</a>
+                                        </li>
+                                    </ul>
+                                </dd>
+                                <dd class="menu-nodes">
+                                    <a href="#" class="node">系统管理功能</a>
+                                    <ul>
+                                        <li>
+                                            <a href="" class="node">用户管理</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="node" >角色管理</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="node" >项目管理</a>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <!--左侧菜单结束-->
+            </div>
+        </div>
+    </div>
+    <!--footer start-->
+    <div class="footer clearfix" id="footer">
+        <div class="layout">
+            <div class="grid">
+                <div class="mod-footer">
+                    <div class="content">
+                        <p>©2012 800best.com 版权所有 ICP证: 浙B2-20070189</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer end-->
+    <div class="mod-dialog">
+        <div class="header">
+            <span class="close"></span>
+        </div>
+        <div class="content">
+            <span class="tip">您好，账单对账完成！</span><br/><br/>
+            <span class="button">确定</span><br/><br/>
+        </div>
+    </div>
+    <div class="mod-dialog">
+        <div class="header has-title">
+            <span class="title">请选择导出【项目名称】的【报表名称】</span>
+            <span class="close"></span>
+        </div>
+        <div class="content">
+            <div class="border-bottom">
+                <span class="name">方式一</span>
+                <button class="open-direct">直接打开</button>
+            </div>
+            <div>
+                <span class="name">方式二</span>
+                <span class="save">保存</span>
+                <input type="text" value="默认桌面"/>
+                <button>浏览</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
