@@ -1,0 +1,61 @@
+.content-line{
+	height: 20px;
+	padding-bottom: 5px;
+	border-bottom: solid #b0b0b0 1px;
+	text-align: center;
+	width: 740px;
+	margin:20px auto;
+	color:  #fd811d;
+	font-weight: 700;
+	position: relative;
+}
+.content-line span{
+	position: absolute;
+	direction:inline-block;
+	border-bottom:solid 5px #fd811d;
+	bottom: -3px;
+	left: 350px;
+	width: 40px;
+}
+.ui-form .field .name {
+	width: auto;
+	padding-left: 25px;
+}
+.gongshi{
+	padding-left:45px;
+}
+.gongshi textarea{
+	height: 50px;
+	width: 700px;
+	vertical-align:center;
+	color: #888;
+}
+.dashed-line{
+	border-bottom:dashed #b0b0b0 1px;
+	margin: 20px 0px;
+}
+.field .info{
+	width: 650px;
+	float: left;
+	padding-left: 25px;
+}
+div.table-box {
+	padding:0px 25px;
+	padding-bottom: 15px;
+	width: 500px;
+}
+table.table-content {
+	width: 500px;
+	border-top: solid #ccc 1px;
+	border-left: solid #ccc 1px;
+}
+table.table-content th, table.table-content td {
+	border-right: solid #ccc 1px;
+	border-bottom: solid #ccc 1px;
+}
+.table-header ul.selectors li.current {
+	background: #fd811d;
+}
+.table-header {
+	background-color: #fea762;
+}
