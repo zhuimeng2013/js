@@ -44,35 +44,63 @@
             <div class="grid">
                 <!--右侧内容开始-->
                 <div class="col-main">
-                    <div class="col-main-wrap clearfix">
+                    <div class="col-main-wrap clearfix ">
                         <div class="mod-baobiao-add ui-form">
                             <div class="header">
                                 <span>优库字段管理</span><span class="gt">&gt;</span><span>新增系统字段</span>
                             </div>
-                            <div class="content">
+                            <div class="content clearfix">
                                 <div class="pipeline pipeline-1 clearfix">
                                     <div class="mod-ziduan-list clearfix">
                                         <div class="hd">
-                                            <dl>
-                                                <dd class="selected">
+                                            <dl id="ziduan-table">
+                                                <dd class="selected" data-idx="0">
                                                     <a href="#" target="_self">订单/出库单</a>
                                                 </dd>
-                                                <dd>
-                                                    <a href="#" target="_self">订单/出库单</a>
+                                                <dd data-idx="1">
+                                                    <a href="#" target="_self">订单明细</a>
                                                 </dd>
-                                                <dd>
-                                                    <a href="#" target="_self">订单/出库单</a>
+                                                <dd data-idx="2">
+                                                    <a href="#" target="_self">入库单</a>
                                                 </dd>
-                                                <dd>
-                                                    <a href="#" target="_self">订单/出库单</a>
+                                                <dd data-idx="3">
+                                                    <a href="#" target="_self">入库单明细</a>
                                                 </dd>
-                                                <dd>
-                                                    <a href="#" target="_self">订单/出库单</a>
+                                                <dd  data-idx="4">
+                                                    <a href="#" target="_self">WMS库存</a>
                                                 </dd>
                                             </dl>
                                         </div>
-                                        <div class="cc">
-                                            <dl id="ziduan-items1" class="ziduan-items">
+                                        <div class="cc" id="ziduan-desc">
+                                            <dl id="ziduan-items1" data-idx="0" class="ziduan-items selected">
+                                                <dd>
+                                                    <div class="field clearfix">
+                                                        <div class="v">
+                                                            <input type="checkbox" class="checkbox" name="" value="a1"/><label class="l">字段a1</label>
+                                                        </div>
+                                                    </div>
+                                                </dd>
+                                                <dd>
+                                                    <div class="field clearfix">
+                                                        <div class="v">
+                                                            <input type="checkbox" class="checkbox" name="" value="a1"/><label class="l">字段a2</label>
+                                                        </div>
+                                                    </div>
+                                                </dd>
+                                                <dd>
+                                                    <div class="field clearfix">
+                                                        <div class="v">
+                                                            <input type="checkbox" class="checkbox" name="" value="a1"/><label class="l">字段a3</label>
+                                                        </div>
+                                                    </div>
+                                                </dd>
+                                                <dd>
+                                                    <div class="field clearfix">
+                                                        <div class="v">
+                                                            <input type="checkbox" class="checkbox" name="" value="a1"/><label class="l">字段a4</label>
+                                                        </div>
+                                                    </div>
+                                                </dd>
                                                 <dd>
                                                     <div class="field clearfix">
                                                         <div class="v">
@@ -84,6 +112,117 @@
                                                     <div class="field clearfix">
                                                         <div class="v">
                                                             <input type="checkbox" class="checkbox" name="" value="a1"/><label class="l">字段1</label>
+                                                        </div>
+                                                    </div>
+                                                </dd>
+                                                <dd>
+                                                    <div class="field clearfix">
+                                                        <div class="v">
+                                                            <input type="checkbox" class="checkbox" name="" value="a1"/><label class="l">字段1</label>
+                                                        </div>
+                                                    </div>
+                                                </dd>
+                                                <dd>
+                                                    <div class="field clearfix">
+                                                        <div class="v">
+                                                            <input type="checkbox" class="checkbox" name="" value="a1"/><label class="l">字段1</label>
+                                                        </div>
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                            <dl id="ziduan-items2" data-idx="1" class="ziduan-items">
+                                                <dd>
+                                                    <div class="field clearfix">
+                                                        <div class="v">
+                                                            <input type="checkbox" class="checkbox" name="" value="a1"/><label class="l">字段2</label>
+                                                        </div>
+                                                    </div>
+                                                </dd>
+                                                <dd>
+                                                    <div class="field clearfix">
+                                                        <div class="v">
+                                                            <input type="checkbox" class="checkbox" name="" value="a1"/><label class="l">字段1</label>
+                                                        </div>
+                                                    </div>
+                                                </dd>
+                                                <dd>
+                                                    <div class="field clearfix">
+                                                        <div class="v">
+                                                            <input type="checkbox" class="checkbox" name="" value="a1"/><label class="l">字段1</label>
+                                                        </div>
+                                                    </div>
+                                                </dd>
+                                                <dd>
+                                                    <div class="field clearfix">
+                                                        <div class="v">
+                                                            <input type="checkbox" class="checkbox" name="" value="a1"/><label class="l">字段1</label>
+                                                        </div>
+                                                    </div>
+                                                </dd>
+                                                <dd>
+                                                    <div class="field clearfix">
+                                                        <div class="v">
+                                                            <input type="checkbox" class="checkbox" name="" value="a1"/><label class="l">字段1</label>
+                                                        </div>
+                                                    </div>
+                                                </dd>
+                                                <dd>
+                                                    <div class="field clearfix">
+                                                        <div class="v">
+                                                            <input type="checkbox" class="checkbox" name="" value="a1"/><label class="l">字段1</label>
+                                                        </div>
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                            <dl id="ziduan-items3" data-idx="2" class="ziduan-items">
+                                                <dd>
+                                                    <div class="field clearfix">
+                                                        <div class="v">
+                                                            <input type="checkbox" class="checkbox" name="" value="a1"/><label class="l">字段3</label>
+                                                        </div>
+                                                    </div>
+                                                </dd>
+                                                <dd>
+                                                    <div class="field clearfix">
+                                                        <div class="v">
+                                                            <input type="checkbox" class="checkbox" name="" value="a1"/><label class="l">字段1</label>
+                                                        </div>
+                                                    </div>
+                                                </dd>
+                                                <dd>
+                                                    <div class="field clearfix">
+                                                        <div class="v">
+                                                            <input type="checkbox" class="checkbox" name="" value="a1"/><label class="l">字段1</label>
+                                                        </div>
+                                                    </div>
+                                                </dd>
+                                                <dd>
+                                                    <div class="field clearfix">
+                                                        <div class="v">
+                                                            <input type="checkbox" class="checkbox" name="" value="a1"/><label class="l">字段1</label>
+                                                        </div>
+                                                    </div>
+                                                </dd>
+                                                <dd>
+                                                    <div class="field clearfix">
+                                                        <div class="v">
+                                                            <input type="checkbox" class="checkbox" name="" value="a1"/><label class="l">字段1</label>
+                                                        </div>
+                                                    </div>
+                                                </dd>
+                                                <dd>
+                                                    <div class="field clearfix">
+                                                        <div class="v">
+                                                            <input type="checkbox" class="checkbox" name="" value="a1"/><label class="l">字段1</label>
+                                                        </div>
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                            <dl id="ziduan-items4" data-idx="3" class="ziduan-items">
+                                                <dd>
+                                                    <div class="field clearfix">
+                                                        <div class="v">
+                                                            <input type="checkbox" class="checkbox" name="" value="a1"/><label class="l">字段4</label>
                                                         </div>
                                                     </div>
                                                 </dd>
@@ -130,150 +269,11 @@
                                                     </div>
                                                 </dd>
                                             </dl>
-                                            <dl id="ziduan-items2" class="ziduan-items">
+                                            <dl id="ziduan-items5" data-idx="4" class="ziduan-items">
                                                 <dd>
                                                     <div class="field clearfix">
                                                         <div class="v">
-                                                            <input type="checkbox" class="checkbox" name="" value="a1"/><label class="l">字段1</label>
-                                                        </div>
-                                                    </div>
-                                                </dd>
-                                                <dd>
-                                                    <div class="field clearfix">
-                                                        <div class="v">
-                                                            <input type="checkbox" class="checkbox" name="" value="a1"/><label class="l">字段1</label>
-                                                        </div>
-                                                    </div>
-                                                </dd>
-                                                <dd>
-                                                    <div class="field clearfix">
-                                                        <div class="v">
-                                                            <input type="checkbox" class="checkbox" name="" value="a1"/><label class="l">字段1</label>
-                                                        </div>
-                                                    </div>
-                                                </dd>
-                                                <dd>
-                                                    <div class="field clearfix">
-                                                        <div class="v">
-                                                            <input type="checkbox" class="checkbox" name="" value="a1"/><label class="l">字段1</label>
-                                                        </div>
-                                                    </div>
-                                                </dd>
-                                                <dd>
-                                                    <div class="field clearfix">
-                                                        <div class="v">
-                                                            <input type="checkbox" class="checkbox" name="" value="a1"/><label class="l">字段1</label>
-                                                        </div>
-                                                    </div>
-                                                </dd>
-                                                <dd>
-                                                    <div class="field clearfix">
-                                                        <div class="v">
-                                                            <input type="checkbox" class="checkbox" name="" value="a1"/><label class="l">字段1</label>
-                                                        </div>
-                                                    </div>
-                                                </dd>
-                                            </dl>
-                                            <dl id="ziduan-items3" class="ziduan-items">
-                                                <dd>
-                                                    <div class="field clearfix">
-                                                        <div class="v">
-                                                            <input type="checkbox" class="checkbox" name="" value="a1"/><label class="l">字段1</label>
-                                                        </div>
-                                                    </div>
-                                                </dd>
-                                                <dd>
-                                                    <div class="field clearfix">
-                                                        <div class="v">
-                                                            <input type="checkbox" class="checkbox" name="" value="a1"/><label class="l">字段1</label>
-                                                        </div>
-                                                    </div>
-                                                </dd>
-                                                <dd>
-                                                    <div class="field clearfix">
-                                                        <div class="v">
-                                                            <input type="checkbox" class="checkbox" name="" value="a1"/><label class="l">字段1</label>
-                                                        </div>
-                                                    </div>
-                                                </dd>
-                                                <dd>
-                                                    <div class="field clearfix">
-                                                        <div class="v">
-                                                            <input type="checkbox" class="checkbox" name="" value="a1"/><label class="l">字段1</label>
-                                                        </div>
-                                                    </div>
-                                                </dd>
-                                                <dd>
-                                                    <div class="field clearfix">
-                                                        <div class="v">
-                                                            <input type="checkbox" class="checkbox" name="" value="a1"/><label class="l">字段1</label>
-                                                        </div>
-                                                    </div>
-                                                </dd>
-                                                <dd>
-                                                    <div class="field clearfix">
-                                                        <div class="v">
-                                                            <input type="checkbox" class="checkbox" name="" value="a1"/><label class="l">字段1</label>
-                                                        </div>
-                                                    </div>
-                                                </dd>
-                                            </dl>
-                                            <dl id="ziduan-items4" class="ziduan-items">
-                                                <dd>
-                                                    <div class="field clearfix">
-                                                        <div class="v">
-                                                            <input type="checkbox" class="checkbox" name="" value="a1"/><label class="l">字段1</label>
-                                                        </div>
-                                                    </div>
-                                                </dd>
-                                                <dd>
-                                                    <div class="field clearfix">
-                                                        <div class="v">
-                                                            <input type="checkbox" class="checkbox" name="" value="a1"/><label class="l">字段1</label>
-                                                        </div>
-                                                    </div>
-                                                </dd>
-                                                <dd>
-                                                    <div class="field clearfix">
-                                                        <div class="v">
-                                                            <input type="checkbox" class="checkbox" name="" value="a1"/><label class="l">字段1</label>
-                                                        </div>
-                                                    </div>
-                                                </dd>
-                                                <dd>
-                                                    <div class="field clearfix">
-                                                        <div class="v">
-                                                            <input type="checkbox" class="checkbox" name="" value="a1"/><label class="l">字段1</label>
-                                                        </div>
-                                                    </div>
-                                                </dd>
-                                                <dd>
-                                                    <div class="field clearfix">
-                                                        <div class="v">
-                                                            <input type="checkbox" class="checkbox" name="" value="a1"/><label class="l">字段1</label>
-                                                        </div>
-                                                    </div>
-                                                </dd>
-                                                <dd>
-                                                    <div class="field clearfix">
-                                                        <div class="v">
-                                                            <input type="checkbox" class="checkbox" name="" value="a1"/><label class="l">字段1</label>
-                                                        </div>
-                                                    </div>
-                                                </dd>
-                                                <dd>
-                                                    <div class="field clearfix">
-                                                        <div class="v">
-                                                            <input type="checkbox" class="checkbox" name="" value="a1"/><label class="l">字段1</label>
-                                                        </div>
-                                                    </div>
-                                                </dd>
-                                            </dl>
-                                            <dl id="ziduan-items5" class="ziduan-items">
-                                                <dd>
-                                                    <div class="field clearfix">
-                                                        <div class="v">
-                                                            <input type="checkbox" class="checkbox" name="" value="a1"/><label class="l">字段1</label>
+                                                            <input type="checkbox" class="checkbox" name="" value="a1"/><label class="l">字段5</label>
                                                         </div>
                                                     </div>
                                                 </dd>
@@ -324,13 +324,43 @@
                                     </div>
                                 </div>
                                 <div class="pipeline pipeline-2 clearfix">
-
+                                    <div class="mod-selected-items" id="mod-selected-items">
+                                        <div class="hd">
+                                            已选择字段清单
+                                        </div>
+                                        <div class="cc">
+                                            <dl data-idx="0">
+                                                <dt>订单/出库单</dt>
+                                                <dd class="txt">还未选择字段</dd>
+                                            </dl>
+                                            <dl data-idx="1">
+                                                <dt>订单明细</dt>
+                                                <dd class="txt">还未选择字段</dd>
+                                            </dl>
+                                            <dl data-idx="2">
+                                                <dt>入库单</dt>
+                                                <dd class="txt">还未选择字段</dd>
+                                            </dl>
+                                            <dl data-idx="3">
+                                                <dt>入库单明细</dt>
+                                                <dd class="txt">还未选择字段</dd>
+                                            </dl>
+                                            <dl data-idx="4">
+                                                <dt>WMS库存</dt>
+                                                <dd class="txt">还未选择字段</dd>
+                                            </dl>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="pipeline pipeline-3 clearfix">
-
+                            </div>
+                            <div class="footer clearfix">
+                                <div class="action">
+                                    <button type="submit" class="btn btn-primary">提交</button>
                                 </div>
                             </div>
                         </div>
+
+
                     </div>
                 </div>
                 <!--右侧内容结束-->
@@ -428,5 +458,6 @@
     </div>
     <!--footer end-->
 </div>
+<script src="../static/js/pages/ziduan/xitong-add.js"></script>
 </body>
 </html>

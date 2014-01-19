@@ -3,15 +3,14 @@
 }
 
 .pipeline-1{
-    width: 350px;
+    width: 400px;
 }
 .mod-ziduan-list{
     border:1px solid #828282;
-    min-height: 300px;
+    min-height: 295px;
     position: relative;
-    margin-left: 12px;
+    margin-left: 22px;
     padding-left: 150px;
-    margin-bottom: 20px;
 }
 .mod-ziduan-list .hd{
     position: absolute;
@@ -48,9 +47,12 @@
 .mod-ziduan-list .ziduan-items{
     display: none;
     border-left:1px solid #828282;
-    min-height: 300px;
+    min-height: 295px;
     _height:300px;
     margin: 0px;
+}
+.mod-ziduan-list .ziduan-items.selected{
+    display: block;
 }
 .mod-ziduan-list .ziduan-items dd{
     height: 26px;
@@ -61,7 +63,41 @@
     margin: 0px;
     padding-top: 5px;
 }
-.mod-ziduan-list #ziduan-items1{
-    display: block;
+.mod-selected-items{
+    width: 300px;
+    border: 1px solid #ccc;
+    margin-left: 20px;
+}
+.mod-selected-items .hd{
+    background: none!important;
+    text-align: center;
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+}
+.mod-selected-items .cc dl{
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 8px;
+}
+.mod-selected-items .cc dt{
+    padding-left: 20px;
+    font-size: 14px;
+    background: transparent url(../../../img/p.png) no-repeat 10px 9px;
 
+    height: 24px;
+    line-height: 24px;
+}
+.mod-selected-items .cc dd{
+    padding-left: 24px;
+    font-size: 12px;
+}
+.mod-selected-items .cc dd.txt{
+    color: #ccc;
+}
+.mod-baobiao-add .footer{
+    padding-bottom: 10px;
+}
+.ui-form .action{
+    padding-left: 40px;
 }
