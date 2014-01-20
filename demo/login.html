@@ -45,14 +45,19 @@
                                                 <legend>用户登录</legend>
                                                 <div class="ui-form-content">
                                                     <span class="label label-error" id="label-error-box"><span class="info">请输入用户名</span></span>
-                                                    <label for="userName">用户名：</label>
-                                                    <input type="text" placeholder="请输入用户名" name="userName" id="userName" class="in">
-                                                    <label for="pwd">密码：</label>
-                                                    <input type="password" placeholder="请输入密码" name="password" id="pwd" class="in">
-                                                    <span class="label label-important hide" id="label-pwd">请输入密码。</span>
-                                                    <label class="checkbox">
-                                                        <input type="checkbox">记住用户名
-                                                    </label>
+                                                    <div class="field">
+                                                        <label for="userName" class="label-username">用户名：</label>
+                                                        <input type="text" placeholder="请输入用户名" name="userName" id="userName" class="in">
+                                                    </div>
+                                                    <div class="field">
+                                                        <label for="pwd" class="label-pwd">密码：</label>
+                                                        <input type="password" placeholder="请输入密码" name="password" id="pwd" class="in">
+                                                    </div>
+                                                    <div class="field" style="padding-left: 0px;height: 30px;">
+                                                        <label class="checkbox">
+                                                            <input type="checkbox"><label class="record">记住用户名</label>
+                                                        </label>
+                                                    </div>
                                                     <button type="submit" class="btn btn-block btn-primary">登录</button>
                                                 </div>
                                             </fieldset>

@@ -1,33 +1,66 @@
 .layout-banner{
-    background: transparent url(../../img/pages/login.jpg) no-repeat center 0px;
+    background: transparent url(../../img/login.jpg) no-repeat center -140px;
 }
 
 .mod-login{
-    height: 500px;
+    height: 600px;
     position: relative;
 }
 .mod-login .login-box{
     position: absolute;
-    top:10px;
+    top:70px;
     right: 8px;
     width: 302px;
     height: 387px;
+
+
 }
 .mod-login .login-box .wrap{
     width:300px;
     overflow:hidden;
-    border:1px solid #dedede;
+    border: 1px solid transparent;
+    background: rgba(0,0,0,.4);
+    _background: 0;
+    _border: 0;
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#66000000', EndColorStr='#66000000');
 }
 .mod-login .login-box form{
     padding: 6px 14px;
     color:#222;
 }
 .mod-login .login-box form legend{
-    color:#222;
-    margin-bottom: 16px;
+    color:#fff;
+    margin-bottom: 2px;
+    padding-left: 13px;
+    border-bottom: 0 none;
+    font-size: 18px;
+}
+.mod-login .field{
+    height: 43px;
+    position: relative;
+    padding-left: 43px;
+    margin-bottom: 12px;
+    margin-left: 8px;
+}
+.mod-login .label-username,
+.mod-login .label-pwd{
+    background: transparent url("../../img/icon.png") no-repeat 0px 0px;
+    position: absolute;
+    height: 42px;
+    width: 43px;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    text-indent: -999px;
+}
+.mod-login .label-pwd{
+    background-position: 0px -54px;
 }
 .mod-login .login-box form .in{
-    width:250px;
+    width:176px;
+    border-left:1px solid #b8b8b8;
+    border-top:1px solid #a6a6a6;
+    padding: 10px 6px;
 }
 .ui-form-content{
     padding-left: 4px;
@@ -40,18 +73,29 @@
     width:124px;
 
 }
+.mod-login .record{
+    color: #fff;
+    display: inline-block;
+    margin-bottom: -2px;
+    position: relative;
+    top: 3px;
+    padding-left: 4px;
+}
 .mod-login .login-box form .label{
     line-height: 15px;
     padding: 4px 8px;
 }
 .mod-login .login-box form .label-error{
-     width: 200px;
-    color:#666;
+    width: 215px;
+    color:#ff0000;
     font-size: 12px;
-    margin-bottom: 6px;
-    padding-left: 23px;
-    border:1px solid #ff8080;
-    background: #fff2f2 url("../../img/stuff.png") no-repeat -319px -449px;
+    margin-bottom: 10px;
+    padding-left: 8px;
+    border:1px solid #ff0000;
+    background-color: #d0d0d0;
+    height: 22px;
+    line-height: 22px;
+    margin-left: 8px;
 }
 
 .mod-login .banner{
@@ -59,6 +103,4 @@
     top: 0px;
     width: 670px;
     height: 360px;
-    left:0px;
-    background: transparent url("../../img/login.png") no-repeat 0px 0px;
 }
