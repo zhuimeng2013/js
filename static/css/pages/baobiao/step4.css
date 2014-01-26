@@ -1,0 +1,34 @@
+.fields{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.cfg-zd{
+    border:1px solid #999;
+    width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.cfg-zd .field .v{
+    width: 550px;
+}
+.cfg-zd .field{
+    padding-bottom: 4px;
+}
+.cfg-zd .field-top{
+    border-bottom: 1px dotted #ccc;margin-bottom: 6px;
+}
+
+
+.op,.op2{
+    display: inline-block;
+    width: 25px;
+    height: 24px;
+    background: transparent url(../../../img/icon4.png) no-repeat 0px 0px;
+    cursor: pointer;
+    margin-left:6px;
+}
+.op-jian,
+.op2-jian{
+    background-position: -32px 0px;
+}

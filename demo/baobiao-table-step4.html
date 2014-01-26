@@ -14,6 +14,8 @@
     <link type="text/css" rel="stylesheet" media="all" href="../static/css/module/table-common.css">
     <link type="text/css" rel="stylesheet" media="all" href="../static/css/pages/baobiao/moban.css">
     <link type="text/css" rel="stylesheet" media="all" href="../static/plugins/jquery-ui/css/ui.css">
+    <link type="text/css" rel="stylesheet" media="all" href="../static/css/module/ui/add.css">
+    <link type="text/css" rel="stylesheet" media="all" href="../static/css/pages/baobiao/step4.css">
     <script src="../static/js/lib/lib.js"></script>
     <script src="../static/plugins/jquery-ui/js/ui.js"></script>
     <base target="_self"/>
@@ -60,66 +62,88 @@
                             <div class="company-name">
                                 项目：广州惠妹科技有限公司
                             </div>
-                            <div class="table-box">
-                                <div class="table-header">
-                                    <ul class="selectors ms-yh">
-                                        <li class="current"><a href="#">汇总报表</a></li>
-                                        <li><a href="#">明细报表</a></li>
-                                    </ul>
+                            <div class="fields ui-form">
+                                <div class="content">
+                                    <div class="field clearfix">
+                                        <div class="name">收费科目：</div>
+                                        <div class="v">
+                                            <p class="txt">B2B订单操作费</p>
+                                        </div>
+                                    </div>
+                                    <script>
+                                        //这里配置动态区块表单的相应字段的前缀
+                                        var formFieldNamePrefix = {
+                                            lowestStandard:'lowest_standard',
+                                            shoufeiType:'shoufei_type',
+                                            amount:'amount',
+                                            startDate:'start_date',
+                                            endDate:'end_date'
+                                        }
+                                    </script>
+                                    <script type="text/tpl" id="cfg-zd-tpl">
+                                        <div class="cfg-zd">
+                                            <div class="field clearfix">
+                                                <div class="name" style="width: 140px;">是否需要设置最低标准：</div>
+                                                <div class="v">
+                                                    <div class="inline">
+                                                        <select name="{lowestStandard}" class="lowest-standard">
+                                                            <option value="1">是</option>
+                                                            <option value="0">否</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="inline">
+                                                        <div class="op op-jia">&nbsp;</div>
+                                                        <div class="op op-jian">&nbsp;</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="dt-fields">
+                                                <div class="field clearfix">
+                                                    <div class="name" style="width: 140px;">请选择最低收费方式：</div>
+                                                    <div class="v">
+                                                        <div class="inline">
+                                                            <select name="{shoufeiType}">
+                                                                <option>按最低金额收费</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="field clearfix">
+                                                    <div class="name" style="width: 140px;">请填写金额：</div>
+                                                    <div class="v">
+                                                        <div class="inline">
+                                                            <input type="text" class="ui-input" name="{amount}"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="myrule">
+                                                <div class="field clearfix">
+                                                    <div class="name">有效期：</div>
+                                                    <div class="v">
+                                                        <div class="inline">
+                                                            <input size="16" type="text" name="{startDate}" value="" style="width:85px" class="datepicker">
+                                                        </div>
+                                                        <div class="inline">至</div>
+                                                        <div class="inline">
+                                                            <input size="16" type="text" name="{endDate}" value="" style="width:85px" class="datepicker">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </script>
+                                    <div class="cfg-items" id="cfg-items">
+                                        <!--这块代码需要动态生成--->
+                                    </div>
+                                    <div class="action">
+                                        <button type="submit" class="btn btn-primary">完成</button>
+                                        <button type="reset" class="btn">取消</button>
+                                    </div>
+
                                 </div>
-                                <table class="table-content">
-                                    <tr>
-                                        <th>科目名称</th>
-                                        <th>公式预览</th>
-                                        <th>操作</th>
-                                    </tr>
-                                    <tr>
-                                        <td></td>
-                                        <td></td>
-                                        <td class="operation">
-                                            <span><a href="#">设置字段取值规则</a></span>
-                                            <span><a href="#">设置单价</a></span>
-                                            <span><a href="#">设置最低收费标准</a></span>
-                                            <span><a href="#">查看</a></span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td></td>
-                                        <td></td>
-                                        <td class="operation">
-                                            <span><a href="#">设置字段取值规则</a></span>
-                                            <span><a href="#">设置单价</a></span>
-                                            <span><a href="#">设置最低收费标准</a></span>
-                                            <span><a href="#">查看</a></span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td></td>
-                                        <td></td>
-                                        <td class="operation">
-                                            <span><a href="#">设置字段取值规则</a></span>
-                                            <span><a href="#">设置单价</a></span>
-                                            <span><a href="#">设置最低收费标准</a></span>
-                                            <span><a href="#">查看</a></span>
-                                        </td>
-                                    </tr>
-                                </table>
                             </div>
-                            <div class="pagination">
-                                <ul>
-                                    <li class="disabled"><a href="#">上一页</a></li>
-                                    <li class="active"><a href="#">1</a></li>
-                                    <li><a href="#">2</a></li>
-                                    <li><a href="#">3</a></li>
-                                    <li><a href="#">4</a></li>
-                                    <li><a href="#">5</a></li>
-                                    <li><a href="#">6</a></li>
-                                    <li><a href="#">7</a></li>
-                                    <li class="disabled"><a href="#">...</a></li>
-                                    <li><a href="#">8</a></li>
-                                    <li><a href="#">下一页</a></li>
-                                </ul>
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -214,5 +238,6 @@
     </div>
     <!--footer end-->
 </div>
+<script src="../static/js/pages/ziduan/step4.js"></script>
 </body>
 </html>
