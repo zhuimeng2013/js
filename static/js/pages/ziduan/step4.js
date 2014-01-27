@@ -38,11 +38,11 @@ jQuery(function($){
         },
         _getHTML:function(a,b){
             var html = substitute(tpl,{
-                lowestStandard:formFieldNamePrefix.lowestStandard+idx,
-                shoufeiType:formFieldNamePrefix.shoufeiType+idx,
-                amount:formFieldNamePrefix.amount+idx+'_'+idx2,
-                startDate:formFieldNamePrefix.startDate+idx,
-                endDate:formFieldNamePrefix.endDate+idx,
+                lowestStandard:formFieldNamePrefix.lowestStandard+'_'+idx,
+                shoufeiType:formFieldNamePrefix.shoufeiType+'_'+idx,
+                amount:formFieldNamePrefix.amount+'_'+idx+'_'+idx2,
+                startDate:formFieldNamePrefix.startDate+'_'+idx,
+                endDate:formFieldNamePrefix.endDate+'_'+idx,
                 idx:idx
             });
             idx++;

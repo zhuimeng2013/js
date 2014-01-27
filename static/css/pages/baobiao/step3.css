@@ -90,3 +90,11 @@
 .ladder-price-table td.disable input{
     display: none;
 }
+.myrule{
+    position: relative;
+}
+.myrule .op-container{
+    position: absolute;
+    left: 524px;
+    bottom: 0px;
+}

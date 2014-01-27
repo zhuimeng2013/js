@@ -89,7 +89,8 @@
                                             startDate:'start_date',
                                             numStart:'num_start',
                                             numEnd:'num_end',
-                                            endDate:'end_date'
+                                            endDate:'end_date',
+                                            jietiValue:'jieti_value'
                                         }
                                     </script>
                                     <script type="text/tpl" id="cfg-zd-tpl">
@@ -155,6 +156,7 @@
                                                 </div>
                                             </div>
                                             <div class="myrule jieti">
+                                                <span class="base-field base-field-tag" style="display:none;" data-idx="{idx}">{baseFieldName}</span>
                                                 <table class="ladder-price-table">
                                                     <caption><div>阶梯单价</div></caption>
                                                     <thead>
@@ -167,13 +169,17 @@
                                                     </thead>
                                                     <tbody>
                                                         <tr>
-                                                            <td class="disable"></td>
-                                                            <td><span class="base-field">{}</span></td>
-                                                            <td><input class="ui-input" name="{numStart}" style="width:100px"/></td>
+                                                            <td class="disable"><input class="ui-input" name="{numStart}" style="width:100px"/></td>
+                                                            <td><span class="base-field">{baseFieldName}</span></td>
                                                             <td><input class="ui-input" name="{numEnd}" style="width:100px"/></td>
+                                                            <td><input class="ui-input" name="{jietiValue}" style="width:100px"/></td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
+                                                <div class="op-container">
+                                                    <div class="op2 op2-jia">&nbsp;</div>
+                                                    <div class="op2 op2-jian">&nbsp;</div>
+                                                </div>
                                             </div>
                                             <div class="field clearfix">
                                                 <div class="name">有效期：</div>
@@ -192,8 +198,8 @@
                                     <script type="text/tpl" id="cfg-zd-field-tpl">
                                             <td><input class="ui-input" name="{numStart}" style="width:100px"/></td>
                                             <td><span class="base-field">{baseFieldName}</span></td>
-                                            <td class="disable"><input class="ui-input" name="{numEnd}" style="width:100px"/></td>
-                                            <td><input class="ui-input" name="" style="width:100px"/></td>
+                                            <td class="disable num-end"><input class="ui-input" name="{numEnd}" style="width:100px"/></td>
+                                            <td><input class="ui-input" name="{jietiValue}" style="width:100px"/></td>
                                     </script>
                                     <div class="cfg-items" id="cfg-items">
                                         <!--这块代码需要动态生成--->

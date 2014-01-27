@@ -15,7 +15,6 @@ jQuery(function($){
     var Page = {
         init:function(){
 
-            //cfgContainer.html(this._getHTML());
             var div = $('<div class="block" />').html(this._getHTML()).appendTo(cfgContainer);
             this._renderField(div);
 
@@ -69,24 +68,33 @@ jQuery(function($){
             });
 
         },
-        _addTD:function(node,baseFieldName){
-            var tbody = $('table.ladder-price-table tbody',node);
+        _addTD:function(node,isFromClick){
+            var table =   $('table.ladder-price-table',node);
+            var tbody = table.find('tbody');
+            var tag  = node.find('.base-field-tag');
+            var name = tag.html();
+
+            if(isFromClick){
+                table.find('.num-end').removeClass('disable');
+            }
+
             $('<tr/>').html(this._getFieldHTML({
-                baseFieldName:baseFieldName,
-                id:idx
+                baseFieldName:name,
+                id:tag.data('idx')
             })).appendTo(tbody);
         },
         _getHTML:function(a,b){
             var html = substitute(tpl,{
-                priceType:formFieldNamePrefix.priceType+idx,
-                baseField:formFieldNamePrefix.baseField+idx,
-                amount:formFieldNamePrefix.amount+idx+'_'+idx2,
-                cycleTime:formFieldNamePrefix.cycleTime+idx+'_'+idx2,
-                pricingMode:formFieldNamePrefix.pricingMode+idx+'_'+idx2,
-                startDate:formFieldNamePrefix.startDate+idx,
-                endDate:formFieldNamePrefix.endDate+idx,
-                numStart:formFieldNamePrefix.numStart+idx,
-                numEnd:formFieldNamePrefix.numEnd+idx,
+                priceType:formFieldNamePrefix.priceType+'_'+idx,
+                baseField:formFieldNamePrefix.baseField+'_'+idx,
+                amount:formFieldNamePrefix.amount+'_'+idx+'_'+idx2,
+                cycleTime:formFieldNamePrefix.cycleTime+'_'+idx+'_'+idx2,
+                pricingMode:formFieldNamePrefix.pricingMode+'_'+idx+'_'+idx2,
+                startDate:formFieldNamePrefix.startDate+'_'+idx,
+                endDate:formFieldNamePrefix.endDate+'_'+idx,
+                numStart:formFieldNamePrefix.numStart+'_'+idx,
+                numEnd:formFieldNamePrefix.numEnd+'_'+idx,
+                jietiValue:formFieldNamePrefix.jietiValue+'_'+idx,
                 idx:idx
             });
             idx++;
@@ -95,8 +103,9 @@ jQuery(function($){
         },
         _getFieldHTML:function(obj){
             var html = substitute(filedTpl,{
-                numStart:formFieldNamePrefix.numEnd+obj.id+'_'+idx2,
-                numEnd:formFieldNamePrefix.numEnd+obj.id+'_'+idx2,
+                numStart:formFieldNamePrefix.numStart+'_'+obj.id+'_'+idx2,
+                numEnd:formFieldNamePrefix.numEnd+'_'+obj.id+'_'+idx2,
+                jietiValue:formFieldNamePrefix.jietiValue+'_'+obj.id+'_'+idx2,
                 baseFieldName:obj.baseFieldName
             });
             idx2++;
@@ -129,17 +138,21 @@ jQuery(function($){
 
                 var p = $(this).closest('.myrule');
 
-                var d = $('<div/>').html(self._getFieldHTML(p.data('idx')));
-                d.find('.field').appendTo(p);
+                self._addTD(p,true);
 
             });
 
             cfgContainer.on('click','.op2-jian',function(){
+                var p = $(this).closest('.myrule');
 
-                if($(this).closest('.myrule').find('.field').length>1){
-                    $(this).closest('.field').remove();
+                var tdItems = p.find('tr');
+                console.log(tdItems.length);
+
+                if(tdItems.length>3){
+                    tdItems.last().remove();
+                    p.find('.num-end').last().addClass('disable');
                 }else{
-                    alert('至少需要保留一个');
+                    alert('删除失败，至少需要保留上下限');
                 }
 
             });

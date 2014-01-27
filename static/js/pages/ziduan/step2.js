@@ -22,11 +22,11 @@ jQuery(function($){
         },
         _getHTML:function(a,b){
             var html = substitute(tpl,{
-                selectedName:formFieldNamePrefix.selectedName+idx,
-                selectRuleType:formFieldNamePrefix.selectRuleType+idx,
-                selectType1:formFieldNamePrefix.selectType1+idx+'_'+idx2,
-                selectType2:formFieldNamePrefix.selectType2+idx+'_'+idx2,
-                selectType3:formFieldNamePrefix.selectType3+idx+'_'+idx2,
+                selectedName:formFieldNamePrefix.selectedName+'_'+idx,
+                selectRuleType:formFieldNamePrefix.selectRuleType+'_'+idx,
+                selectType1:formFieldNamePrefix.selectType1+'_'+idx+'_'+idx2,
+                selectType2:formFieldNamePrefix.selectType2+'_'+idx+'_'+idx2,
+                selectType3:formFieldNamePrefix.selectType3+'_'+idx+'_'+idx2,
                 idx:idx
             });
             idx++;
@@ -35,9 +35,9 @@ jQuery(function($){
         },
         _getFieldHTML:function(id){
             var html = substitute(filedTpl,{
-                selectType1:formFieldNamePrefix.selectType1+id+'_'+idx2,
-                selectType2:formFieldNamePrefix.selectType2+id+'_'+idx2,
-                selectType3:formFieldNamePrefix.selectType3+id+'_'+idx2
+                selectType1:formFieldNamePrefix.selectType1+'_'+id+'_'+idx2,
+                selectType2:formFieldNamePrefix.selectType2+'_'+id+'_'+idx2,
+                selectType3:formFieldNamePrefix.selectType3+'_'+id+'_'+idx2
             });
             idx2++;
             return html;
