@@ -32,3 +32,9 @@
 .op2-jian{
     background-position: -32px 0px;
 }
+.ui-form .gongshi-list{
+    min-height: 60px;
+    _height: 60px;
+    font-size: 12px;
+    color: #666;
+}

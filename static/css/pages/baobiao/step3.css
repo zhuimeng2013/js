@@ -1,0 +1,92 @@
+.fields{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.cfg-zd{
+    border:1px solid #999;
+    width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.cfg-zd .field .v{
+    width: 550px;
+}
+.cfg-zd .field{
+    padding-bottom: 4px;
+}
+.cfg-zd .field-top{
+    border-bottom: 1px dotted #ccc;margin-bottom: 6px;
+}
+
+
+.op,.op2{
+    display: inline-block;
+    width: 25px;
+    height: 24px;
+    background: transparent url(../../../img/icon4.png) no-repeat 0px 0px;
+    cursor: pointer;
+    margin-left:6px;
+}
+.op-jian,
+.op2-jian{
+    background-position: -32px 0px;
+}
+.ui-form .gongshi-list{
+    min-height: 60px;
+    _height: 60px;
+    font-size: 12px;
+    color: #666;
+
+}
+.ladder-price-table{
+    width: 530px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 20px;
+    margin-top: 6px;
+}
+.ladder-price-table caption{
+    height: 30px;
+    background-color: #fea762;
+    border: 1px solid #fd6f1d;
+}
+.ladder-price-table caption div{
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #fd811d;
+    width: 125px;
+    height: 30px;
+    float: left;
+    line-height: 30px;
+
+}
+.ladder-price-table th{
+    height: 30px;
+    background-color: #b9b9b9;
+    border: 1px solid #888;
+    color: #fff;
+    text-align: center;
+}
+.ladder-price-table th.w1{
+    width: 140px;
+}
+.ladder-price-table th.w2{
+    width: 130px;
+}
+.ladder-price-table th.w3{
+    width: 150px;
+}
+.ladder-price-table td{
+    border: 1px solid #888;
+    height: 30px;
+    color: #8c8c8c;
+    text-align: center;
+}
+.ladder-price-table td.disable{
+    background-color: #ccc;
+}
+.ladder-price-table td.disable input{
+    display: none;
+}

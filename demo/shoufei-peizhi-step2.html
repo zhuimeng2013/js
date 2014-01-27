@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>为项目配置收费科目－第二步结果</title>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <link type="text/css" rel="stylesheet" media="all" href="../static/css/lib/lib.css">
+    <link type="text/css" rel="stylesheet" media="all" href="../static/css/module/topbar.css">
+    <link type="text/css" rel="stylesheet" media="all" href="../static/css/module/header.css">
+    <link type="text/css" rel="stylesheet" media="all" href="../static/css/module/footer.css">
+    <link type="text/css" rel="stylesheet" media="all" href="../static/css/module/layout.css">
+    <link type="text/css" rel="stylesheet" media="all" href="../static/css/module/step.css">
+    <link type="text/css" rel="stylesheet" media="all" href="../static/css/module/table-common.css">
+    <link type="text/css" rel="stylesheet" media="all" href="../static/css/pages/baobiao/moban.css">
+    <link type="text/css" rel="stylesheet" media="all" href="../static/plugins/jquery-ui/css/ui.css">
+    <link type="text/css" rel="stylesheet" media="all" href="../static/css/module/ui/add.css">
+    <link type="text/css" rel="stylesheet" media="all" href="../static/css/pages/baobiao/step2.css">
+    <script src="../static/js/lib/lib.js"></script>
+    <script src="../static/plugins/jquery-ui/js/ui.js"></script>
+    <base target="_self"/>
+</head>
+<body>
+<div class="doc" id="doc">
+    <!--toolbar start-->
+    <div class="topbar" id="topbar">
+        <div class="layout">
+            <div class="grid">
+                <div class="mod-toolbar">
+                    <p>你好！<span class="user-name">方健华</span><a href=""><span class="clock">3</span></a>&nbsp;&nbsp;<a href="./user-manage.html" target="_self" class="login">修改密码</a>&nbsp;&nbsp;<a href="./loginout.html" target="_self" class="login">退出</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--toolbar end-->
+    <!--logo-->
+    <div class="header" id="header">
+        <div class="layout">
+            <div class="grid">
+                <div class="mod-masthead">
+                    <a href="./index.html"><img src="../static/img/logo.png" /></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--logo end-->
+    <div class="content" id="content">
+        <div class="layout">
+            <div class="grid">
+                <!--右侧内容开始-->
+                <div class="col-main">
+                    <div class="col-main-wrap">
+                        <div class="mod-moban">
+                            <div class="mod-step">
+                                <ul class="fd-clr">
+                                    <li>Step1:为项目配置收费科目<span class="narrow">&nbsp;</span></li>
+                                    <li class="current">Step2:为字段设置取值规则<span class="narrow">&nbsp;</span></li>
+                                    <li>Step3:为收费科目设置单价<span class="narrow">&nbsp;</span></li>
+                                    <li>Step4:为收费科目设置最低收费<span class="narrow">&nbsp;</span></li>
+                                </ul>
+                            </div>
+                            <div class="company-name">
+                                项目：广州惠妹科技有限公司
+                            </div>
+                            <div class="fields ui-form">
+                                <div class="content">
+                                    <div class="field clearfix">
+                                        <div class="name">收费科目：</div>
+                                        <div class="v">
+                                            <p class="txt">B2B订单操作费</p>
+                                        </div>
+                                    </div>
+                                    <div class="field clearfix">
+                                        <div class="name">计算公式：</div>
+                                        <div class="v">
+                                            <div class="gongshi-list">
+                                                单价*订单量
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <script>
+                                        //这里配置动态区块表单的相应字段的前缀
+                                        var formFieldNamePrefix = {
+                                            selectedName:'shoufei_type',
+                                            selectRuleType:'rule_type',
+                                            selectType1:'s_type_1_',
+                                            selectType2:'s_type_2_',
+                                            selectType3:'s_type_3_'
+                                        }
+                                    </script>
+                                    <script type="text/tpl" id="cfg-zd-tpl">
+                                        <div class="cfg-zd">
+                                            <div class="field clearfix field-top">
+                                                <div class="name" style="width: 97px;">收费科目：</div>
+                                                <div class="v">
+                                                    <div class="inline">
+                                                        <select name="{selectedName}">
+                                                            <option>项目2</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="inline">
+                                                        <div class="op op-jia">&nbsp;</div>
+                                                        <div class="op op-jian">&nbsp;</div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="field clearfix">
+                                                <div class="name" style="width: 97px;">设置取值规则：</div>
+                                                <div class="v">
+                                                    <input type="radio" class="checkbox checkbox-default select-rule-type" name="{selectRuleType}"><label class="l">系统默认规则</label>
+                                                    <input type="radio" class="checkbox  select-rule-type" name="{selectRuleType}" checked="checked"><label class="l">自定义取值规则</label>
+                                                </div>
+                                            </div>
+                                            <div class="myrule" data-idx="{idx}">
+                                                <div class="field clearfix">
+                                                    <div class="name" style="width: 30px;">当：</div>
+                                                    <div class="v">
+                                                        <div class="inline">
+                                                            <select name="{selectType1}" style="width: 120px;">
+                                                                <option>总件数</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="inline">
+                                                            <select name="{selectType2}" style="width: 120px;">
+                                                                <option>&lt;</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="inline">
+                                                            <input type="text" class="ui-input" name="{selectType3}" style="width: 120px;"/>
+                                                        </div>
+                                                        <div class="inline">
+                                                            <div class="op2 op2-jia">&nbsp;</div>
+                                                            <div class="op2 op2-jian">&nbsp;</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </script>
+                                    <script type="text/tpl" id="cfg-zd-field-tpl">
+                                        <div class="field clearfix">
+                                            <div class="name" style="width: 30px;">当：</div>
+                                            <div class="v">
+                                                <div class="inline">
+                                                    <select name="{selectType1}" style="width: 120px;">
+                                                        <option>总件数</option>
+                                                    </select>
+                                                </div>
+                                                <div class="inline">
+                                                    <select name="{selectType2}" style="width: 120px;">
+                                                        <option>&lt;</option>
+                                                    </select>
+                                                </div>
+                                                <div class="inline">
+                                                    <input type="text" class="ui-input" name="{selectType3}" style="width: 120px;"/>
+                                                </div>
+                                                <div class="inline">
+                                                    <div class="op2 op2-jia">&nbsp;</div>
+                                                    <div class="op2 op2-jian">&nbsp;</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </script>
+                                    <div class="cfg-items" id="cfg-items">
+                                        <!--这块代码需要动态生成--->
+                                    </div>
+                                    <div class="action">
+                                        <button type="submit" class="btn btn-primary">下一步</button>
+                                        <button type="reset" class="btn">上一步</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--右侧内容结束-->
+                <!--左侧菜单开始-->
+                <div class="col-sub">
+                    <div class="mod-menu">
+                        <div class="header">
+                            <h2>优库结算系统</h2>
+                        </div>
+                        <div class="content">
+                            <dl class="menu-item current">
+                                <dd>
+                                    <a href="" class="node">优库结算账单</a>
+                                </dd>
+                                <dd class="menu-item menu-nodes">
+                                    <a href="#" class="node">优库结算报表</a>
+                                    <ul class="">
+                                        <li>
+                                            <a href="" class="node">账单总览</a>
+                                        </li>
+                                    </ul>
+                                </dd>
+                                <dd class="menu-nodes fold">
+                                    <a href="#" class="node">优库数据记录</a>
+                                    <ul>
+                                        <li>
+                                            <a href="" class="node">录入数据</a>
+                                        </li>
+                                    </ul>
+                                </dd>
+                                <dd class="menu-nodes fold">
+                                    <a href="#" class="node">项目收费配置</a>
+                                    <ul class="mt-menu-sub-content">
+                                        <li>
+                                            <a href="" class="node">新增配置</a>
+                                        </li>
+                                    </ul>
+                                </dd>
+                                <dd class="menu-nodes fold">
+                                    <a href="#" class="node">优库收费科目</a>
+                                    <ul>
+                                        <li>
+                                            <a href="" class="node">新增科目</a>
+                                        </li>
+                                    </ul>
+                                </dd>
+                                <dd class="menu-nodes fold">
+                                    <a href="#" class="node">优库字段管理</a>
+                                    <ul>
+                                        <li>
+                                            <a href="" class="node">新增字段</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="node" >提醒功能</a>
+                                        </li>
+                                    </ul>
+                                </dd>
+                                <dd class="menu-nodes">
+                                    <a href="#" class="node">系统管理功能</a>
+                                    <ul>
+                                        <li>
+                                            <a href="" class="node">用户管理</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="node" >角色管理</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="node" >项目管理</a>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <!--左侧菜单结束-->
+            </div>
+        </div>
+    </div>
+    <!--footer start-->
+    <div class="footer clearfix" id="footer">
+        <div class="layout">
+            <div class="grid">
+                <div class="mod-footer">
+                    <div class="content">
+                        <p>©2012 800best.com 版权所有 ICP证: 浙B2-20070189</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer end-->
+</div>
+<script src="../static/js/pages/ziduan/step2.js"></script>
+</body>
+</html>
