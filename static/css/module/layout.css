@@ -85,6 +85,9 @@ body{
     line-height: 37px;
     font-size: 14px;
 }
+.mod-menu a.node:hover{
+    color: #ff7300;
+}
 .mod-menu ul a.node{
     line-height: 35px;
 }
