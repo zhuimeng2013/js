@@ -1,0 +1,38 @@
+.mod-success{
+    padding: 100px 200px;
+}
+.mod-success .wrap{
+    background: transparent url("../../img/dg.jpg") no-repeat 0px 3px;
+    padding-left: 60px;
+}
+.mod-success h3{
+    font-size: 16px;
+    color: #ff7300;
+    font-weight: normal;
+    margin: 0px;
+    line-height: 24px;
+}
+.mod-success .option{
+    height: 30px;
+    padding-top: 8px;
+}
+.mod-success ul{
+    padding: 0px;
+    margin: 0px;
+}
+.mod-success ul li{
+    float: left;
+    padding:0px;
+    line-height: 14px;
+    padding-right: 10px;
+    margin-right: 10px;
+    list-style: none;
+    border-right:1px solid #ccc;
+
+}
+.mod-success ul li.last{
+    border-right:0 none;
+}
+.mod-success ul li a:hover{
+    color: #ff7300;
+}

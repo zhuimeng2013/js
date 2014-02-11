@@ -1,0 +1,27 @@
+.img-404{
+    text-align: center;
+}
+.reason{
+    text-align: center;
+}
+.reason em{
+    font-style: normal;
+    color: #447bd6;
+    padding-right: 4px;
+}
+.erro-opera {
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+.refresh-sumb {
+    font-size: 14px;
+    background: #80bcde;
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 30px;
+    line-height: 28px;
+    border: none;
+    cursor: pointer;
+}
